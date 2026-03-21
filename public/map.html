@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Map &amp; downloads</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="logo" href="index.html">Our trip <span>2026</span></a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="itinerary.html">Itinerary</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="logistics.html">Logistics</a></li>
+          <li><a href="map.html" aria-current="page">Map</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="wrap">
+      <h1>Map &amp; Google</h1>
+      <p>Overview embed, multi-stop directions, KML for My Maps, and airport quick links.</p>
+    </div>
+  </div>
+
+  <main>
+    <div class="wrap">
+      <div class="btn-row" style="margin-bottom: 1.5rem;">
+        <a class="btn btn--primary" href="https://www.google.com/maps/dir/Barcelona,+Spain/Madrid,+Spain/Paris,+France/Barcelona,+Spain" target="_blank" rel="noopener">Open route in Google Maps</a>
+        <a class="btn btn--ghost" href="https://www.google.com/maps/d/" target="_blank" rel="noopener">Google My Maps</a>
+        <a class="btn btn--ghost" href="downloads/trip-route.kml" download>Download trip-route.kml</a>
+      </div>
+
+      <p class="section-lead" style="margin-top: 0;">Import <strong>trip-route.kml</strong> into My Maps: Create map → Import → select the file → Share link with your partner.</p>
+
+      <h2 class="section-title">Europe overview</h2>
+      <div class="map-frame">
+        <iframe title="Western Europe overview" src="https://www.openstreetmap.org/export/embed.html?bbox=-4.2%2C41.2%2C2.8%2C48.9&amp;layer=mapnik" loading="lazy"></iframe>
+      </div>
+
+      <h2 class="section-title">Quick searches</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>BCN airport</h3>
+          <p>International hub for US flights.</p>
+          <a class="card__link" href="https://www.google.com/maps/search/?api=1&query=Barcelona+El+Prat+Airport" target="_blank" rel="noopener">Open in Maps →</a>
+        </article>
+        <article class="card">
+          <h3>Sants station</h3>
+          <p>AVE to Madrid.</p>
+          <a class="card__link" href="https://www.google.com/maps/search/?api=1&query=Barcelona+Sants+station" target="_blank" rel="noopener">Open in Maps →</a>
+        </article>
+        <article class="card">
+          <h3>Madrid Atocha</h3>
+          <p>High-speed rail hub.</p>
+          <a class="card__link" href="https://www.google.com/maps/search/?api=1&query=Madrid+Atocha+station" target="_blank" rel="noopener">Open in Maps →</a>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Private trip site · <span id="js-year"></span></p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

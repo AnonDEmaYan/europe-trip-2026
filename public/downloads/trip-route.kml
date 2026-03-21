@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Barcelona → Madrid → Paris → Barcelona (Mar 31 – Apr 8)</name>
+    <description><![CDATA[
+      <p>Land Mar 31 · Fly home Apr 8 from BCN</p>
+      <p><b>Order:</b> Barcelona (2n) → Madrid AVE (2n) → Paris (3n) → Barcelona (1n)</p>
+      <p>Import this file in <b>Google My Maps</b>: maps.google.com/maps/d → Create map → Import</p>
+    ]]></description>
+
+    <Style id="stop-icon">
+      <IconStyle>
+        <scale>1.2</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="route-line">
+      <LineStyle><color>ff4285f4</color><width>4</width></LineStyle>
+    </Style>
+
+    <Placemark>
+      <name>1 — Barcelona (Mar 31 – Apr 1, Apr 7)</name>
+      <description><![CDATA[
+        Nights: Mar 31, Apr 1 · final night Apr 7<br/>
+        Fly in DL 194 · Gothic Quarter, Barceloneta, Sagrada Família
+      ]]></description>
+      <styleUrl>#stop-icon</styleUrl>
+      <Point><coordinates>2.1734,41.3851,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Barcelona Sants (AVE to Madrid)</name>
+      <description><![CDATA[Train to Madrid Atocha ~2.5–3 h · Book Renfe / Trainline]]></description>
+      <styleUrl>#stop-icon</styleUrl>
+      <Point><coordinates>2.1404,41.3789,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>2 — Madrid (Apr 2 – Apr 3)</name>
+      <description><![CDATA[
+        Atocha station · Retiro, La Latina tapas, Malasaña / Chueca
+      ]]></description>
+      <styleUrl>#stop-icon</styleUrl>
+      <Point><coordinates>-3.6908,40.4065,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Madrid (city center)</name>
+      <description><![CDATA[Puerta del Sol area reference]]></description>
+      <styleUrl>#stop-icon</styleUrl>
+      <Point><coordinates>-3.7038,40.4168,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>3 — Paris (Apr 4 – Apr 6)</name>
+      <description><![CDATA[
+        Easter Sun Apr 5 · Fly from MAD (CDG/ORY) · Seine, Eiffel, Marais
+      ]]></description>
+      <styleUrl>#stop-icon</styleUrl>
+      <Point><coordinates>2.3522,48.8566,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Barcelona–El Prat (BCN)</name>
+      <description><![CDATA[International hub · Fly home to ATL Apr 8]]></description>
+      <styleUrl>#stop-icon</styleUrl>
+      <Point><coordinates>2.0833,41.2974,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Trip path (city centers)</name>
+      <styleUrl>#route-line</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          2.1734,41.3851,0
+          -3.7038,40.4168,0
+          2.3522,48.8566,0
+          2.1734,41.3851,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>

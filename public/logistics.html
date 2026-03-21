@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Logistics — flights, trains, checklist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="logo" href="index.html">Our trip <span>2026</span></a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="itinerary.html">Itinerary</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="logistics.html" aria-current="page">Logistics</a></li>
+          <li><a href="map.html">Map</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="wrap">
+      <h1>Logistics</h1>
+      <p>Flights, trains, bookings, and practical notes — Schengen, adapters, Easter hours.</p>
+    </div>
+  </div>
+
+  <main>
+    <div class="wrap">
+      <h2 class="section-title">Flights</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Leg</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Atlanta → Barcelona</strong></td>
+              <td><strong>Delta DL 194</strong> (often shown DL0194). Overnight · land <strong>Tue Mar 31</strong> — confirm times on Delta app.</td>
+            </tr>
+            <tr>
+              <td><strong>Barcelona → Atlanta</strong></td>
+              <td><strong>Wed Apr 8</strong> from BCN — add your return flight number when confirmed.</td>
+            </tr>
+            <tr>
+              <td><strong>Madrid → Paris</strong></td>
+              <td>Book separately · ~2 h · compare <strong>CDG</strong> vs <strong>ORY</strong> for hotel access.</td>
+            </tr>
+            <tr>
+              <td><strong>Paris → Barcelona</strong></td>
+              <td>Second intra-Europe flight · back to hub before US departure.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="section-title">Ground transport</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Segment</th>
+              <th>How</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Barcelona ↔ Madrid</td>
+              <td><strong>AVE</strong> high-speed train · <strong>Sants ↔ Atocha</strong> · ~2.5–3 h · <a href="https://www.renfe.com" target="_blank" rel="noopener">Renfe</a> or <a href="https://www.thetrainline.com" target="_blank" rel="noopener">Trainline</a></td>
+            </tr>
+            <tr>
+              <td>Airports ↔ city</td>
+              <td>BCN: Aerobus / train · MAD: metro or train · Paris: <strong>RER B</strong> (CDG) · Orlybus / RER (ORY)</td>
+            </tr>
+            <tr>
+              <td>Within cities</td>
+              <td>Metro + walking; consider multi-day transit cards where it pays off.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="section-title">Booking checklist</h2>
+      <ul class="checklist">
+        <li>AVE Barcelona → Madrid (Apr 2 morning)</li>
+        <li>Madrid → Paris flight (Apr 4)</li>
+        <li>Paris → Barcelona flight (Apr 7)</li>
+        <li>Hotels: Barcelona (2+1 nights), Madrid (2), Paris (3)</li>
+        <li>Sagrada Família timed entry</li>
+        <li>Optional: flamenco Madrid, Ribera wine tour, Champagne day from Paris, Disfrutar / Botín if desired</li>
+        <li>Travel insurance · phone plan · passport copies</li>
+      </ul>
+
+      <h2 class="section-title">Nightlife &amp; sports (optional)</h2>
+      <div class="callout callout--info">
+        <strong>Reggaeton / Latin nights:</strong> Paris often has big DJ-led nights at <strong>YOYO – Palais de Tokyo</strong> — check <a href="https://dice.fm" target="_blank" rel="noopener">DICE</a> for your dates. Barcelona: <strong>Shôko</strong>, <strong>Sala Apolo</strong> — verify listings close to travel.
+      </div>
+      <div class="callout">
+        <strong>Soccer:</strong> Big matches (e.g. <strong>PSG</strong> at Parc des Princes) need tickets from official club / resale rules. Your itinerary has you in <strong>Madrid Apr 3</strong> and <strong>Paris from Apr 4</strong> — if a match falls on a night you’re in Paris, book early; otherwise enjoy bars or a future trip.
+      </div>
+
+      <h2 class="section-title">Packing &amp; practical</h2>
+      <ul class="checklist">
+        <li>Adapters: Type C/E (same for Spain + France)</li>
+        <li>Layers for late March / early April; comfortable shoes for cobblestones</li>
+        <li>Easter Sunday (Apr 5): some shops closed — check Google Maps hours</li>
+        <li>Inditex: Zara, Massimo Dutti, Bershka often in same strips or malls</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Private trip site · <span id="js-year"></span></p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

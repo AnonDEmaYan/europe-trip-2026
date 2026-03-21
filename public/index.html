@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Barcelona, Madrid & Paris — Mar 31–Apr 8. Itinerary, spots, and logistics." />
+  <title>Our trip — Barcelona · Madrid · Paris</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="logo" href="index.html">Our trip <span>2026</span></a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="itinerary.html">Itinerary</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="logistics.html">Logistics</a></li>
+          <li><a href="map.html">Map</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>Barcelona, Madrid &amp; Paris</h1>
+      <p class="hero__route">One loop · Schengen · Land Mar 31 · Home Apr 8</p>
+      <div class="hero__meta">
+        <span class="tag tag--accent">8 nights</span>
+        <span class="tag">Delta DL 194 → BCN</span>
+        <span class="tag">Easter in Paris · Apr 5</span>
+      </div>
+      <p class="hero__lead">
+        A city-hopping honeymoon-style trip: Catalonia first, high-speed train to the Spanish capital, then Paris, and back to Barcelona for the flight home. Coffee, great food, neighborhoods to wander, and Zara-friendly shopping — all in one place on this site.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="itinerary.html">Day-by-day plan</a>
+        <a class="btn btn--ghost" href="explore.html">Coffee &amp; food picks</a>
+        <a class="btn btn--ghost" href="https://www.google.com/maps/dir/Barcelona,+Spain/Madrid,+Spain/Paris,+France/Barcelona,+Spain" target="_blank" rel="noopener">Open route in Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="wrap">
+      <h2 class="section-title">At a glance</h2>
+      <p class="section-lead">Four segments, three cities — Barcelona bookends a Madrid and Paris arc.</p>
+
+      <div class="grid-3">
+        <article class="card">
+          <h3>Barcelona ×2</h3>
+          <p>Mar 31–Apr 1 and one night Apr 7. Sagrada Família, Gothic Quarter, Barceloneta, tapas — start and end in Catalonia.</p>
+          <a class="card__link" href="explore.html#barcelona">Barcelona picks →</a>
+        </article>
+        <article class="card">
+          <h3>Madrid</h3>
+          <p>Apr 2–3. AVE from Sants · Retiro, La Latina, Malasaña &amp; Chueca — tapas, rooftops, optional flamenco or Ribera wine day.</p>
+          <a class="card__link" href="explore.html#madrid">Madrid picks →</a>
+        </article>
+        <article class="card">
+          <h3>Paris</h3>
+          <p>Apr 4–6. Fly from Madrid · Easter Sunday Apr 5 · Seine, Eiffel, Marais; optional Versailles gardens or Champagne by train.</p>
+          <a class="card__link" href="explore.html#paris">Paris picks →</a>
+        </article>
+      </div>
+
+      <div class="callout callout--info">
+        <strong>Running this site locally:</strong> from the <code>europe-trip-site</code> folder run <code>docker compose up</code> and open <a href="http://localhost:8080">http://localhost:8080</a>. See README in the project folder for details.
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Private trip site · Not for publication · <span id="js-year"></span></p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
