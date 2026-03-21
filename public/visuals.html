@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Interactive photo explorer for Barcelona, Madrid, and Paris spots — filters, lightbox, Google Maps." />
+  <title>Visuals — interactive place gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/visuals.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="logo" href="index.html">Our trip <span>2026</span></a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="itinerary.html">Itinerary</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="visuals.html" aria-current="page">Visuals</a></li>
+          <li><a href="logistics.html">Logistics</a></li>
+          <li><a href="guide.html">Guide</a></li>
+          <li><a href="map.html">Map</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero page-hero--rich">
+    <div class="wrap">
+      <h1>Visual explorer</h1>
+      <p>
+        <strong>Interactive gallery</strong> for every spot on <a href="explore.html">Explore</a> — filter by city and type, tap a card to open a <strong>full-screen lightbox</strong> (← → or swipe logic via keys), then jump to <strong>Google Maps</strong>.
+        Photos are <strong>thematic</strong> (coffee, tapas, wine country, street life) from <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>; they may not depict the exact venue.
+      </p>
+      <p class="section-lead" style="margin:0.75rem 0 0;font-size:0.95rem;">
+        <strong>Tip:</strong> Share a deep link — <a href="visuals.html#barcelona">#barcelona</a>, <a href="visuals.html#madrid">#madrid</a>, <a href="visuals.html#paris">#paris</a>.
+      </p>
+    </div>
+  </div>
+
+  <main>
+    <div class="wrap">
+      <div id="trip-visual-root" aria-live="polite"></div>
+      <div class="callout callout--info">
+        <strong>Lists &amp; links:</strong> Full addresses and booking notes stay on <a href="explore.html">Explore</a>. Itinerary: <a href="itinerary.html">Itinerary</a>.
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Private trip site · Photos via Unsplash (license) · <span id="js-year"></span></p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/places-data.js"></script>
+  <script src="js/visual-explore.js"></script>
+</body>
+</html>

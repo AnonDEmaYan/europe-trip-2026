@@ -800,6 +800,32 @@ tr:last-child td {
   color: var(--muted);
 }
 
+/* Explore → Visuals CTA */
+.explore-visual-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.4rem;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+  background: linear-gradient(125deg, rgba(42, 111, 124, 0.12), rgba(196, 92, 62, 0.1));
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.explore-visual-cta p {
+  margin: 0;
+  max-width: 36rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.explore-visual-cta strong {
+  color: var(--ink);
+}
+
 @media print {
   .site-header,
   .nav-toggle,
@@ -814,5 +840,8 @@ tr:last-child td {
   .city-block {
     box-shadow: none;
     break-inside: avoid;
+  }
+  .explore-visual-cta {
+    display: none !important;
   }
 }
