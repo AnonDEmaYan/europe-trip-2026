@@ -38,7 +38,9 @@ Open **http://localhost:8080** (paths like `/css/main.css` need this root = `pub
 | `public/img/venues/` | Your photos + [README](./public/img/venues/README.md) |
 | `scripts/fetch-unsplash-oembed.mjs` | Optional: photographer line from an Unsplash photo URL (no API key) |
 | `public/logistics.html` | Flights, trains, checklist |
-| `public/map.html` | OSM embed, Google links, KML download |
+| `public/map.html` | **Leaflet map** — all Explore pins (`data/explore-places.geojson`) + OSM embed, KML |
+| `public/data/explore-places.geojson` | GeoJSON pins (rebuild: `python3 scripts/build-explore-geojson.py`) |
+| `scripts/build-explore-geojson.py` | Nominatim geocode for GeoJSON (set `NOMINATIM_INSECURE=0` if SSL certs OK) |
 | `public/css/main.css` | Styles |
 | `public/js/main.js` | Mobile nav |
 | `public/downloads/trip-route.kml` | Import into Google My Maps |

@@ -1,0 +1,127 @@
+/* Full Explore places map (Leaflet) */
+.explore-map-section {
+  margin: 2rem 0 2.5rem;
+}
+
+.explore-map-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.explore-map-toolbar__label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.explore-map-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.explore-map-chip {
+  border: 1px solid var(--line);
+  background: var(--bg-card);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.explore-map-chip:hover,
+.explore-map-chip.is-active {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.explore-map-chip.is-active {
+  background: var(--accent-soft);
+}
+
+.explore-map-count {
+  margin: 0 0 0.5rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.explore-map-frame {
+  height: min(72vh, 640px);
+  min-height: 380px;
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  z-index: 1;
+}
+
+.explore-map-frame .leaflet-container {
+  font-family: var(--font);
+  height: 100%;
+  width: 100%;
+}
+
+/* Popup */
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(26, 31, 46, 0.15);
+}
+
+.leaflet-popup-content {
+  margin: 0.85rem 1rem;
+  min-width: 200px;
+  max-width: 280px;
+}
+
+.map-popup__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin: 0 0 0.25rem;
+  color: var(--ink);
+}
+
+.map-popup__meta {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--sea);
+  margin-bottom: 0.5rem;
+}
+
+.map-popup__link {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.88rem;
+  margin-top: 0.35rem;
+}
+
+/* Marker cluster theming */
+.marker-cluster-small,
+.marker-cluster-medium,
+.marker-cluster-large {
+  background-color: rgba(196, 92, 62, 0.45);
+}
+.marker-cluster-small div,
+.marker-cluster-medium div,
+.marker-cluster-large div {
+  background-color: rgba(196, 92, 62, 0.85);
+  color: #fff;
+  font-weight: 800;
+}
+
+@media print {
+  .explore-map-section {
+    display: none;
+  }
+}

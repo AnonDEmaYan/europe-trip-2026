@@ -1,0 +1,1722 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+"type": "Feature",
+"id": "bcn-threemarks",
+"properties": {
+"name": "Three Marks Coffee",
+"city": "barcelona",
+"category": "coffee",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Three%20Marks%20Coffee%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1832075,
+41.3971791
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-bardelpla",
+"properties": {
+"name": "Bar del Pla",
+"city": "barcelona",
+"category": "food",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bar%20del%20Pla%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1800221,
+41.3856036
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-quimet",
+"properties": {
+"name": "Quimet & Quimet",
+"city": "barcelona",
+"category": "food",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Quimet%20Quimet%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1657389,
+41.374222
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-vinitus",
+"properties": {
+"name": "Vinitus",
+"city": "barcelona",
+"category": "food",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vinitus%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1640969,
+41.3900241
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-disfrutar",
+"properties": {
+"name": "Disfrutar",
+"city": "barcelona",
+"category": "food",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Disfrutar%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1531722,
+41.387762
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-cova",
+"properties": {
+"name": "La Cova Fumada",
+"city": "barcelona",
+"category": "food",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Cova%20Fumada%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1891943,
+41.3792983
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-canmano",
+"properties": {
+"name": "Can Maño",
+"city": "barcelona",
+"category": "food",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Can%20Ma%C3%B1o%20Barceloneta"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1884561,
+41.3811949
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-teresa",
+"properties": {
+"name": "Teresa Carles",
+"city": "barcelona",
+"category": "food",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Teresa%20Carles%20Carrer%20Jovellanos%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1680352,
+41.3851442
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-flax",
+"properties": {
+"name": "Flax & Kale",
+"city": "barcelona",
+"category": "food",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Flax%20and%20Kale%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.16553,
+41.3851539
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-raval-indian",
+"properties": {
+"name": "Raval Indian (area)",
+"city": "barcelona",
+"category": "spicy",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Carrer%20de%20Sant%20Pau%2C%20Raval%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1730125,
+41.3803833
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-mexican",
+"properties": {
+"name": "Mexican BCN search",
+"city": "barcelona",
+"category": "spicy",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Taco%20Alto%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1810119,
+41.3896941
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-sichuan",
+"properties": {
+"name": "Sichuan Barcelona",
+"city": "barcelona",
+"category": "spicy",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sichuan%20Restaurant%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1735795,
+41.4107627
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-codorniu",
+"properties": {
+"name": "Codorníu",
+"city": "barcelona",
+"category": "winery",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Codorniu%20Sant%20Sadurni%20d%27Anoia"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+1.7969435,
+41.4341362
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-freixenet",
+"properties": {
+"name": "Freixenet",
+"city": "barcelona",
+"category": "winery",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Freixenet%20Sant%20Sadurni%20d%27Anoia"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+1.7902729,
+41.4194819
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-torres",
+"properties": {
+"name": "Familia Torres Pacs",
+"city": "barcelona",
+"category": "winery",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bodegas%20Torres%20Pacs%20Penedes"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+1.6661034,
+41.3496413
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-jeanleon",
+"properties": {
+"name": "Jean Leon",
+"city": "barcelona",
+"category": "winery",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jean%20Leon%20winery%20Penedes"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+1.706104,
+41.4341794
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-santsadurni-st",
+"properties": {
+"name": "Sant Sadurní station",
+"city": "barcelona",
+"category": "winery",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sant%20Sadurni%20d%27Anoia%20railway%20station"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+1.7946769,
+41.4203274
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-bunkers",
+"properties": {
+"name": "Bunkers del Carmel",
+"city": "barcelona",
+"category": "wander",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bunkers%20del%20Carmel%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1616974,
+41.4193923
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-gracia",
+"properties": {
+"name": "Gràcia",
+"city": "barcelona",
+"category": "wander",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gracia%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1582812,
+41.4065767
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-zara-pg",
+"properties": {
+"name": "Zara Passeig de Gràcia",
+"city": "barcelona",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Zara%20Passeig%20de%20Gracia%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1688707,
+41.3894664
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-maquinista",
+"properties": {
+"name": "La Maquinista",
+"city": "barcelona",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Maquinista%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1982884,
+41.4408218
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-illa",
+"properties": {
+"name": "L'Illa Diagonal",
+"city": "barcelona",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=L%27Illa%20Diagonal%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.134703,
+41.3895165
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-uniqlo",
+"properties": {
+"name": "Uniqlo Barcelona",
+"city": "barcelona",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Uniqlo%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1912247,
+41.40499
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-lefties",
+"properties": {
+"name": "Lefties Barcelona",
+"city": "barcelona",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lefties%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1901654,
+41.4049061
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-laroca",
+"properties": {
+"name": "La Roca Village",
+"city": "barcelona",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Roca%20Village%20outlet"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3462588,
+41.6155807
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-toma",
+"properties": {
+"name": "Toma Café",
+"city": "madrid",
+"category": "coffee",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Toma%20Cafe%20Malasana%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.7059638,
+40.4264913
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-hola",
+"properties": {
+"name": "Hola Coffee",
+"city": "madrid",
+"category": "coffee",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hola%20Coffee%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.6853284,
+40.4248823
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-ruda",
+"properties": {
+"name": "Ruda Café",
+"city": "madrid",
+"category": "coffee",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ruda%20Cafe%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.7080071,
+40.410427
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-revuelta",
+"properties": {
+"name": "Casa Revuelta",
+"city": "madrid",
+"category": "food",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casa%20Revuelta%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.707839,
+40.4139218
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-sanmiguel",
+"properties": {
+"name": "Mercado San Miguel",
+"city": "madrid",
+"category": "food",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mercado%20de%20San%20Miguel%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.7090151,
+40.4153741
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-alberto",
+"properties": {
+"name": "Casa Alberto",
+"city": "madrid",
+"category": "food",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casa%20Alberto%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.7001224,
+40.4138199
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-anton",
+"properties": {
+"name": "Mercado Antón Martín",
+"city": "madrid",
+"category": "food",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mercado%20Anton%20Martin%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.6986671,
+40.4116381
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-ovenmoz",
+"properties": {
+"name": "Oven Mozzarella Gran Vía",
+"city": "madrid",
+"category": "food",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Oven%20Mozzarella%20Gran%20Via%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.6977539,
+40.4193261
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-lavapies-indian",
+"properties": {
+"name": "Lavapiés curry area",
+"city": "madrid",
+"category": "spicy",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lavapies%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.7009495,
+40.4085142
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-lavinia",
+"properties": {
+"name": "Lavinia",
+"city": "madrid",
+"category": "winery",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lavinia%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.7536132,
+40.4056895
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-secretos",
+"properties": {
+"name": "Bodega de los Secretos",
+"city": "madrid",
+"category": "winery",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bodega%20de%20los%20Secretos%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.6947928,
+40.4106912
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-fisna",
+"properties": {
+"name": "La Fisna",
+"city": "madrid",
+"category": "winery",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Fisna%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.7011144,
+40.4068452
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-ribera-tour",
+"properties": {
+"name": "Ribera tours (Madrid)",
+"city": "madrid",
+"category": "winery",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Plaza%20Mayor%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.7044676,
+40.4194547
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-debod",
+"properties": {
+"name": "Templo de Debod",
+"city": "madrid",
+"category": "wander",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Templo%20de%20Debod%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.7176131,
+40.4240689
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-malasana",
+"properties": {
+"name": "Malasaña",
+"city": "madrid",
+"category": "wander",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Malasana%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.7042311,
+40.4267079
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-matadero",
+"properties": {
+"name": "Matadero Madrid",
+"city": "madrid",
+"category": "wander",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Matadero%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.6976625,
+40.3915448
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-zara",
+"properties": {
+"name": "Zara Gran Vía",
+"city": "madrid",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Zara%20Gran%20Via%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.7041384,
+40.420361
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-corte",
+"properties": {
+"name": "El Corte Inglés Preciados",
+"city": "madrid",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=El%20Corte%20Ingles%20Preciados%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.7050277,
+40.417698
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-principe",
+"properties": {
+"name": "Príncipe Pío",
+"city": "madrid",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Centro%20Comercial%20Principe%20Pio%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.7204964,
+40.4221458
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-lasrozas",
+"properties": {
+"name": "Las Rozas Village",
+"city": "madrid",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Las%20Rozas%20Village"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.9012656,
+40.5189467
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-ssreyes",
+"properties": {
+"name": "San Sebastián de los Reyes Outlets",
+"city": "madrid",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Style%20Outlets%20San%20Sebastian%20de%20los%20Reyes"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.6079412,
+40.5670819
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-lefties",
+"properties": {
+"name": "Lefties Madrid",
+"city": "madrid",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lefties%20Gran%20Via%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.703728,
+40.4203286
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-boot",
+"properties": {
+"name": "Boot Café",
+"city": "paris",
+"category": "coffee",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Boot%20Cafe%20Paris%20Marais"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3653264,
+48.8611678
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-breizh",
+"properties": {
+"name": "Breizh Café",
+"city": "paris",
+"category": "food",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Breizh%20Cafe%20Marais%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3618156,
+48.8606307
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-bouillon",
+"properties": {
+"name": "Bouillon Pigalle",
+"city": "paris",
+"category": "food",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bouillon%20Pigalle%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3374142,
+48.8826186
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-fallafel",
+"properties": {
+"name": "L'As du Fallafel",
+"city": "paris",
+"category": "food",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=L%27As%20du%20Fallafel%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3590682,
+48.857415
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-frenchie",
+"properties": {
+"name": "Frenchie To Go",
+"city": "paris",
+"category": "food",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Frenchie%20To%20Go%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3476569,
+48.8676585
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-season",
+"properties": {
+"name": "Season",
+"city": "paris",
+"category": "food",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Season%20Restaurant%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3680966,
+48.8594272
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-seafood",
+"properties": {
+"name": "Seafood bistros (area)",
+"city": "paris",
+"category": "food",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Rue%20Montorgueil%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3464827,
+48.8638613
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-song",
+"properties": {
+"name": "Song Heng",
+"city": "paris",
+"category": "spicy",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Song%20Heng%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3567862,
+48.864707
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-bateaux-pier",
+"properties": {
+"name": "Bateaux Parisiens pier",
+"city": "paris",
+"category": "cruise",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bateaux%20Parisiens%20Port%20de%20la%20Bourdonnais"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.2936269,
+48.8604547
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-gare-est",
+"properties": {
+"name": "Gare de l'Est",
+"city": "paris",
+"category": "wine_trip",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gare%20de%20l%27Est%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3594905,
+48.8770979
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-taittinger",
+"properties": {
+"name": "Taittinger Reims",
+"city": "paris",
+"category": "wine_trip",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Champagne%20Taittinger%20Reims"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+4.0062071,
+49.2351266
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-veuve",
+"properties": {
+"name": "Veuve Clicquot Reims",
+"city": "paris",
+"category": "wine_trip",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Veuve%20Clicquot%20Reims"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+4.0458473,
+49.2402093
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-avenue-champ",
+"properties": {
+"name": "Avenue de Champagne Épernay",
+"city": "paris",
+"category": "wine_trip",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Avenue%20de%20Champagne%20Epernay"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+3.9700303,
+49.0412278
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-ruinart",
+"properties": {
+"name": "Ruinart Reims",
+"city": "paris",
+"category": "wine_trip",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Maison%20Ruinart%20Reims"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+4.0543844,
+49.243872
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-caves-louvre",
+"properties": {
+"name": "Les Caves du Louvre",
+"city": "paris",
+"category": "wine_trip",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Les%20Caves%20du%20Louvre%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3426078,
+48.8609644
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-taillevent",
+"properties": {
+"name": "Les Caves Taillevent",
+"city": "paris",
+"category": "wine_trip",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Les%20Caves%20de%20Taillevent%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.28098,
+48.8675864
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-canal",
+"properties": {
+"name": "Canal Saint-Martin",
+"city": "paris",
+"category": "wander",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Canal%20Saint-Martin%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3671691,
+48.8689561
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-vivienne",
+"properties": {
+"name": "Galerie Vivienne",
+"city": "paris",
+"category": "wander",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Galerie%20Vivienne%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.339757,
+48.8667277
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-buttes",
+"properties": {
+"name": "Parc des Buttes-Chaumont",
+"city": "paris",
+"category": "wander",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parc%20des%20Buttes-Chaumont%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3820982,
+48.8795551
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-zara-ce",
+"properties": {
+"name": "Zara Champs-Élysées",
+"city": "paris",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Zara%20Champs%20Elysees%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3045673,
+48.8711452
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-forum",
+"properties": {
+"name": "Forum des Halles",
+"city": "paris",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Forum%20des%20Halles%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3471384,
+48.861878
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-bhv",
+"properties": {
+"name": "BHV Marais",
+"city": "paris",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=BHV%20Marais%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3533468,
+48.8574693
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-lafayette",
+"properties": {
+"name": "Galeries Lafayette",
+"city": "paris",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Galeries%20Lafayette%20Haussmann%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3321271,
+48.8736459
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-vallee",
+"properties": {
+"name": "La Vallée Village",
+"city": "paris",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Vallee%20Village%20Serris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.7834527,
+48.8533785
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-kilo",
+"properties": {
+"name": "Kilo Shop Marais",
+"city": "paris",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kilo%20Shop%20Marais%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3521738,
+48.8581694
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-guerrisol",
+"properties": {
+"name": "Guerrisol Paris",
+"city": "paris",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Guerrisol%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3579759,
+48.8818522
+]
+}
+},
+{
+"type": "Feature",
+"id": "hub-bcn-air",
+"properties": {
+"name": "Barcelona Airport BCN",
+"city": "transport",
+"category": "transport",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Barcelona%20El%20Prat%20Airport"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.0676829,
+41.2885586
+]
+}
+},
+{
+"type": "Feature",
+"id": "hub-bcn-sants",
+"properties": {
+"name": "Barcelona Sants",
+"city": "transport",
+"category": "transport",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Barcelona%20Sants%20railway%20station"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1399602,
+41.3790121
+]
+}
+},
+{
+"type": "Feature",
+"id": "hub-mad-atocha",
+"properties": {
+"name": "Madrid Atocha",
+"city": "transport",
+"category": "transport",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Madrid%20Atocha%20railway%20station"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.6886008,
+40.4069749
+]
+}
+},
+{
+"type": "Feature",
+"id": "hub-par-cdg",
+"properties": {
+"name": "Paris CDG",
+"city": "transport",
+"category": "transport",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Charles%20de%20Gaulle%20Airport%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.5618472,
+49.0108065
+]
+}
+},
+{
+"type": "Feature",
+"id": "hub-par-ory",
+"properties": {
+"name": "Paris Orly",
+"city": "transport",
+"category": "transport",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Orly%20Airport%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3557223,
+48.7484771
+]
+}
+},
+{
+"type": "Feature",
+"id": "fb-psg",
+"properties": {
+"name": "Parc des Princes",
+"city": "football",
+"category": "football",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Parc%20des%20Princes%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.2530693,
+48.8413634
+]
+}
+},
+{
+"type": "Feature",
+"id": "fb-bernabeu",
+"properties": {
+"name": "Santiago Bernabéu",
+"city": "football",
+"category": "football",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Santiago%20Bernabeu%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.6907254,
+40.4523667
+]
+}
+},
+{
+"type": "Feature",
+"id": "fb-metropolitano",
+"properties": {
+"name": "Cívitas Metropolitano",
+"city": "football",
+"category": "football",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Estadio%20Metropolitano%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.5997153,
+40.436053
+]
+}
+},
+{
+"type": "Feature",
+"id": "fb-montjuic",
+"properties": {
+"name": "Estadi Olímpic Lluís Companys",
+"city": "football",
+"category": "football",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Estadi%20Olimpic%20Lluis%20Companys%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1556451,
+41.36472
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-satan",
+"properties": {
+"name": "Satan's Coffee Corner",
+"city": "barcelona",
+"category": "coffee",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Satan%27s%20Coffee%20Corner%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.17583,
+41.38304
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-nomad",
+"properties": {
+"name": "Nomad Coffee Passatge Sert",
+"city": "barcelona",
+"category": "coffee",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nomad%20Coffee%20Lab%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1771731,
+41.3889108
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-thai-born",
+"properties": {
+"name": "Thai Born area",
+"city": "barcelona",
+"category": "spicy",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Thai%20restaurant%20Barcelona%20Born"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1821,
+41.3852
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-born",
+"properties": {
+"name": "El Born",
+"city": "barcelona",
+"category": "wander",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=El%20Born%20Barcelona"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1825,
+41.3849
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-arenas",
+"properties": {
+"name": "Arenas de Barcelona",
+"city": "barcelona",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Arenas%20de%20Barcelona%20shopping"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.149,
+41.3758
+]
+}
+},
+{
+"type": "Feature",
+"id": "bcn-cos",
+"properties": {
+"name": "COS Barcelona",
+"city": "barcelona",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=COS%20store%20Barcelona%20Passeig%20de%20Gracia"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.1653,
+41.3914
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-botin",
+"properties": {
+"name": "Sobrino de Botín",
+"city": "madrid",
+"category": "food",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sobrino%20de%20Botin%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.7074,
+40.4145
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-thai-chueca",
+"properties": {
+"name": "Thai Chueca area",
+"city": "madrid",
+"category": "spicy",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Thai%20restaurant%20Chueca%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.6978,
+40.4221
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-maranon",
+"properties": {
+"name": "Bodega Marañón",
+"city": "madrid",
+"category": "winery",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bodega%20Mara%C3%B1%C3%B3n%20winery%20Spain"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.453,
+40.242
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-plenilunio",
+"properties": {
+"name": "Plenilunio",
+"city": "madrid",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Plenilunio%20Shopping%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.616,
+40.48
+]
+}
+},
+{
+"type": "Feature",
+"id": "mad-cos",
+"properties": {
+"name": "COS Gran Vía",
+"city": "madrid",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=COS%20Gran%20Via%20Madrid"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-3.705,
+40.42
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-kb",
+"properties": {
+"name": "KB CaféShop",
+"city": "paris",
+"category": "coffee",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=KB%20Caf%C3%A9Shop%20Paris%20Pigalle"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3356,
+48.8828
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-frag",
+"properties": {
+"name": "Fragments",
+"city": "paris",
+"category": "coffee",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fragments%20Paris%20coffee%20Marais"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3625,
+48.8575
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-wild",
+"properties": {
+"name": "Wild & the Moon",
+"city": "paris",
+"category": "food",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Wild%20and%20the%20Moon%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3621,
+48.8636
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-lao",
+"properties": {
+"name": "Lao Siam",
+"city": "paris",
+"category": "spicy",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lao%20Siam%20Paris%2013"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3648,
+48.8209
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-korean",
+"properties": {
+"name": "Korean Paris 15e",
+"city": "paris",
+"category": "spicy",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Korean%20restaurant%20Paris%2015%20Rue%20de%20la%20Convention"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.287,
+48.842
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-yachts",
+"properties": {
+"name": "Yachts de Paris",
+"city": "paris",
+"category": "cruise",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Yachts%20de%20Paris%20Port%20Henri%20IV"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.357,
+48.852
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-fracasse",
+"properties": {
+"name": "Capitaine Fracasse",
+"city": "paris",
+"category": "cruise",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Capitaine%20Fracasse%20dinner%20cruise%20Seine%20Paris"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.282,
+48.85
+]
+}
+},
+{
+"type": "Feature",
+"id": "par-cos",
+"properties": {
+"name": "COS Paris",
+"city": "paris",
+"category": "shop",
+"mapsUrl": "https://www.google.com/maps/search/?api=1&query=COS%20Paris%20Rue%20de%20Rennes"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+2.3285,
+48.851
+]
+}
+}
+]
+}
