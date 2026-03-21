@@ -20,6 +20,14 @@
     var im = pool && pool[counters[key] % pool.length];
     counters[key]++;
     s._img = im || { url: "", credit: "", creditUrl: "#" };
+    if (s.localImage) {
+      s._img = {
+        url: s.localImage,
+        credit: s.localCredit || "Your trip photo",
+        creditUrl: s.localCreditUrl || "#",
+        isLocal: true,
+      };
+    }
   });
 
   var cityLabels = { barcelona: "Barcelona", madrid: "Madrid", paris: "Paris", all: "All cities" };
@@ -112,12 +120,20 @@
       cityLabels[s.city] + " · " + (catLabels[s.cat] || s.cat);
     modal.querySelector(".viz-modal__note").textContent = s.note;
     var cred = modal.querySelector(".viz-modal__credit");
-    cred.innerHTML =
-      'Photo: <a href="' +
-      escapeAttr(s._img.creditUrl) +
-      '" target="_blank" rel="noopener">' +
-      escapeHtml(s._img.credit) +
-      "</a> (thematic — not always this exact venue)";
+    if (s._img.isLocal) {
+      cred.innerHTML =
+        escapeHtml(s._img.credit) +
+        (s._img.creditUrl && s._img.creditUrl !== "#"
+          ? ' · <a href="' + escapeAttr(s._img.creditUrl) + '" target="_blank" rel="noopener">credit link</a>'
+          : "");
+    } else {
+      cred.innerHTML =
+        'Photo: <a href="' +
+        escapeAttr(s._img.creditUrl) +
+        '" target="_blank" rel="noopener">' +
+        escapeHtml(s._img.credit) +
+        "</a> (thematic — not always this exact venue)";
+    }
     modal.querySelector(".viz-modal__maps").href = s.maps;
     modal.hidden = false;
     modal.setAttribute("aria-hidden", "false");
@@ -137,6 +153,83 @@
     if (openIndex < 0 || filtered.length === 0) return;
     openIndex = (openIndex + delta + filtered.length) % filtered.length;
     openLightbox(openIndex);
+  }
+
+  /** Horizontal swipe (touch) and drag (mouse / pen) on the photo area. */
+  function attachSwipeHandlers(visual) {
+    if (!visual) return;
+
+    var startX = 0;
+    var startY = 0;
+    var tracking = false;
+    var pointerId = null;
+    var threshold = 48;
+
+    function endSwipe(clientX, clientY) {
+      if (!tracking) return;
+      tracking = false;
+      var dx = clientX - startX;
+      var dy = clientY - startY;
+      if (Math.abs(dx) < threshold || Math.abs(dx) < Math.abs(dy) * 1.2) return;
+      if (dx > 0) stepLightbox(-1);
+      else stepLightbox(1);
+    }
+
+    function onImage(el) {
+      return el && el.classList && el.classList.contains("viz-modal__img");
+    }
+
+    visual.addEventListener(
+      "touchstart",
+      function (e) {
+        if (e.touches.length !== 1 || !onImage(e.target)) return;
+        tracking = true;
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+      },
+      { passive: true }
+    );
+
+    visual.addEventListener(
+      "touchend",
+      function (e) {
+        if (!tracking || !e.changedTouches.length) return;
+        endSwipe(e.changedTouches[0].clientX, e.changedTouches[0].clientY);
+      },
+      { passive: true }
+    );
+
+    visual.addEventListener(
+      "touchcancel",
+      function () {
+        tracking = false;
+      },
+      { passive: true }
+    );
+
+    visual.addEventListener("pointerdown", function (e) {
+      if (e.pointerType === "touch") return;
+      if (e.button !== 0 || !onImage(e.target)) return;
+      tracking = true;
+      pointerId = e.pointerId;
+      startX = e.clientX;
+      startY = e.clientY;
+      try {
+        visual.setPointerCapture(e.pointerId);
+      } catch (err) {}
+    });
+
+    visual.addEventListener("pointerup", function (e) {
+      if (e.pointerType === "touch") return;
+      if (pointerId !== null && e.pointerId !== pointerId) return;
+      pointerId = null;
+      endSwipe(e.clientX, e.clientY);
+    });
+
+    visual.addEventListener("pointercancel", function () {
+      pointerId = null;
+      tracking = false;
+    });
   }
 
   function buildChrome() {
@@ -198,6 +291,7 @@
       '<p class="viz-modal__meta"></p>' +
       '<p class="viz-modal__note"></p>' +
       '<p class="viz-modal__credit"></p>' +
+      '<p class="viz-modal__hint">Swipe or drag on the photo · ← → keys</p>' +
       '<a class="btn btn--primary viz-modal__maps" href="#" target="_blank" rel="noopener">Open in Google Maps</a>' +
       "</div>" +
       "</div>";
@@ -233,6 +327,8 @@
     modal.querySelector(".viz-modal__nav--next").addEventListener("click", function () {
       stepLightbox(1);
     });
+
+    attachSwipeHandlers(modal.querySelector(".viz-modal__visual"));
 
     document.addEventListener("keydown", function (e) {
       if (modal.hidden) return;

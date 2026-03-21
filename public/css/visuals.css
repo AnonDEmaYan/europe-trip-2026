@@ -205,6 +205,17 @@ body.viz-modal-open {
   position: relative;
   min-height: 200px;
   background: var(--line);
+  touch-action: manipulation;
+}
+
+.viz-modal__visual .viz-modal__img {
+  cursor: grab;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.viz-modal__visual .viz-modal__img:active {
+  cursor: grabbing;
 }
 
 .viz-modal__img {
@@ -265,6 +276,19 @@ body.viz-modal-open {
 
 .viz-modal__credit a {
   font-weight: 600;
+}
+
+.viz-modal__hint {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--muted);
+  opacity: 0.9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .viz-modal__hint {
+    display: none;
+  }
 }
 
 .viz-modal__maps {

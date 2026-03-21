@@ -1,6 +1,12 @@
 /**
  * Explore spots + image pools (Unsplash — free license; credit in UI).
  * Images are thematic for category/neighborhood, not always the exact venue.
+ *
+ * Optional per-spot override (your files in public/img/venues/):
+ *   localImage: "img/venues/photo.jpg"
+ *   localCredit: "Our photo"
+ *   localCreditUrl: "https://..."  // optional
+ * See public/img/venues/README.md
  */
 (function (w) {
   "use strict";

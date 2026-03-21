@@ -33,6 +33,10 @@ Open **http://localhost:8080** (paths like `/css/main.css` need this root = `pub
 | `public/index.html` | Home |
 | `public/itinerary.html` | Day-by-day |
 | `public/explore.html` | Coffee, food, wander, shopping |
+| `public/visuals.html` | **Interactive** photo grid, filters, lightbox (swipe / drag / keys) |
+| `public/js/places-data.js` | Spots + Unsplash pools; optional `localImage` → `img/venues/` |
+| `public/img/venues/` | Your photos + [README](./public/img/venues/README.md) |
+| `scripts/fetch-unsplash-oembed.mjs` | Optional: photographer line from an Unsplash photo URL (no API key) |
 | `public/logistics.html` | Flights, trains, checklist |
 | `public/map.html` | OSM embed, Google links, KML download |
 | `public/css/main.css` | Styles |
