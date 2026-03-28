@@ -11,7 +11,10 @@ const user = process.env.PAGES_SITE_USER || "";
 const pass = process.env.PAGES_SITE_PASSWORD || "";
 
 if (!user || !pass) {
-  console.log("write-pages-auth: PAGES_SITE_USER or PAGES_SITE_PASSWORD empty; leaving auth-config.js unchanged.");
+  console.log(
+    "::warning::PAGES_SITE_USER or PAGES_SITE_PASSWORD is not set — deployed site will have NO browser login. Add both repository Actions secrets (Settings → Secrets and variables → Actions), then redeploy."
+  );
+  console.log("write-pages-auth: leaving public/js/auth-config.js unchanged (empty digest).");
   process.exit(0);
 }
 
@@ -21,4 +24,5 @@ const body =
   `window.__TRIP_PAGES_EXPECTED_DIGEST__ = ${JSON.stringify(digest)};\n`;
 
 writeFileSync(out, body, "utf8");
-console.log("write-pages-auth: wrote public/js/auth-config.js (digest only, no plaintext credentials).");
+console.log("write-pages-auth: wrote public/js/auth-config.js (SHA-256 digest only; no plaintext password in the file).");
+console.log("::notice::GitHub Pages browser login is ON for this deploy (Europe trip gate).");

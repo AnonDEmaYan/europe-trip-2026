@@ -41,18 +41,27 @@ Replace `YOUR_USERNAME` / `YOUR_REPO` with yours.
 
 Updates: every push to `main` redeploys automatically.
 
-## Username / password on GitHub Pages
+## Username / password on GitHub Pages (option 2 — browser login)
 
-GitHub Pages serves **static files only** — there is no nginx or HTTP Basic Auth like your **Docker** setup. This repo adds an **optional** browser login for the live site:
+GitHub Pages serves **static files only** — no nginx Basic Auth. This repo deploys a **browser login** on every page (`public/js/site-gate.js` + a digest in `auth-config.js` generated in CI).
 
-1. On GitHub: repo → **Settings** → **Secrets and variables** → **Actions** → **New repository secret**.
-2. Add **`PAGES_SITE_USER`** and **`PAGES_SITE_PASSWORD`** (same values you use for Docker, e.g. `Intltravel2k26` / `Intltravel@2k26`).
-3. Push to **`main`** (or **Actions** → **Deploy to GitHub Pages** → **Run workflow**). The workflow runs `scripts/write-pages-auth.mjs`, which writes only a **SHA-256 digest** into `public/js/auth-config.js` in the deploy artifact — not your plaintext password in the repo.
-4. Open your Pages URL; you should get a **Trip site** sign-in. The session lasts until you close the tab (or clear site data).
+### Enable it (one-time)
 
-**Limits (read this):** Anyone can download the deployed `auth-config.js` and try offline guesses against the digest. This keeps casual visitors out; it is **not** bank-grade security. For stronger protection, use **Cloudflare Access**, a **private** GitHub repo with **GitHub Pro** private Pages, or keep the site **Docker-only** on your network.
+1. Open your repo on GitHub → **Settings** → **Secrets and variables** → **Actions**.
+2. **New repository secret** (exact names):
+   - **`PAGES_SITE_USER`** — e.g. same as Docker `TRIP_SITE_USER` (`Intltravel2k26`).
+   - **`PAGES_SITE_PASSWORD`** — e.g. same as Docker `TRIP_SITE_PASSWORD` (`Intltravel@2k26`).
+3. Trigger a deploy: push to **`main`**, or **Actions** → **Deploy to GitHub Pages** → **Run workflow**.
+4. In the workflow log, look for **`Pages login gate is ON`** (notice). If you see a **warning** about secrets missing, the names don’t match or the secrets weren’t saved.
+5. Open your live Pages URL in a **private/incognito** window — you should see the **Europe trip** sign-in. Session lasts until you close the tab (or clear site data).
 
-If you **omit** those two secrets, the published site has **no** login gate (digest stays empty in the committed stub).
+**Where it’s implemented:** `.github/workflows/deploy-github-pages.yml` (step **Apply Pages login**) · `scripts/write-pages-auth.mjs` · `public/js/site-gate.js` · all pages load `js/auth-config.js` first.
+
+**If login never appears** after you set secrets: add the **same two names** under **Settings → Environments → `github-pages` → Environment secrets** (some accounts use environment-scoped secrets for the Pages environment).
+
+**Limits:** The live site still ships `auth-config.js` with a **digest** only — offline guessing is possible. Fine for casual privacy; use **Cloudflare Access** or **private Pages** if you need stronger protection.
+
+If both secrets are **omitted**, the workflow prints a warning and the site stays **without** a gate (empty digest in the committed stub).
 
 ## If the repo is only the `public/` folder
 
