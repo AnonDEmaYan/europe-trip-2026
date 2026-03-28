@@ -29,7 +29,7 @@
   root.setAttribute("aria-label", "Sign in");
   root.innerHTML =
     '<div class="trip-gate__panel">' +
-    '<h1 class="trip-gate__title">Trip site</h1>' +
+    '<h1 class="trip-gate__title">Europe trip</h1>' +
     '<p class="trip-gate__hint">Enter the username and password to continue.</p>' +
     '<form class="trip-gate__form" id="trip-gate-form">' +
     '<label class="trip-gate__label">Username<input type="text" name="u" autocomplete="username" required /></label>' +

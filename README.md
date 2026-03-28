@@ -64,15 +64,6 @@ See **[GITHUB-PAGES.md](./GITHUB-PAGES.md)** — push to **`main`**, enable **Se
 
 Upload **`public/`** to **Cloudflare Pages** or **Netlify** if you prefer.
 
-## Google Stitch (default for big UI changes — **no GCP**)
-
-**[Google Stitch](https://stitch.withgoogle.com/)** — design in the **browser**, export HTML/CSS, merge into **`public/`**. **Home (`index.html`)** links to Stitch (iframe may be blank).
-
-- **Canonical export:** **`design/stitch.zip`** + unpacked **`design/stitch-export/`** (design system in **`stitch/terracotta_voyage/DESIGN.md`**, reference screens under **`stitch/*/`**). See **`design/README.md`**. Re-copy from **`~/Downloads/stitch.zip`** when you update the export.
-- **No Google Cloud required** for normal use. Full flow: **[docs/GOOGLE-STITCH.md](./docs/GOOGLE-STITCH.md)**.
-- **Cursor:** **`Sandbox/.cursor/mcp.json`** ships with **empty** `mcpServers` so nothing breaks without GCP. Optional Stitch MCP: merge **`Sandbox/.cursor/mcp.google-stitch.example.json`** into `mcp.json` + GCP only if you want it.
-- **Agent:** **`.cursor/rules/stitch-ui.mdc`** — browser Stitch first; MCP only if configured.
-
 ## Source notes
 
 Content is aligned with `../trip-research/` (itinerary, spots, flights). Edit HTML directly to update the trip.

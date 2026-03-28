@@ -28,7 +28,6 @@ html {
 
 body {
   margin: 0;
-  top: 0 !important; /* offset Google Translate top bar */
   font-family: var(--font);
   font-size: 1.05rem;
   line-height: 1.6;
@@ -966,141 +965,9 @@ tr:last-child td {
   color: var(--ink);
 }
 
-/* Google Translate — Telugu (header) */
-.site-translate {
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
-  flex-shrink: 0;
-}
-
-.site-translate__label {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--muted);
-  white-space: nowrap;
-}
-
-.site-translate__fallback {
-  font-size: 0.75rem;
-  color: var(--muted);
-  max-width: 10rem;
-  line-height: 1.3;
-}
-
-#google_translate_element {
-  font-size: 0;
-}
-
-#google_translate_element .goog-te-gadget {
-  font-family: var(--font) !important;
-}
-
-#google_translate_element .goog-te-gadget-simple {
-  background-color: var(--bg) !important;
-  border: 1px solid var(--line) !important;
-  border-radius: 8px !important;
-  padding: 0.2rem 0.35rem !important;
-}
-
-#google_translate_element .goog-te-gadget-icon {
-  display: none;
-}
-
-body > .skiptranslate,
-iframe.skiptranslate {
-  display: none !important;
-}
-
 @media (max-width: 768px) {
-  .site-translate {
-    width: 100%;
-    justify-content: flex-end;
-    order: 4;
-  }
-
   .site-header__inner {
     flex-wrap: wrap;
-  }
-}
-
-/* Google Stitch embed panel (home) */
-.stitch-panel {
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--line);
-}
-
-.stitch-panel__lead {
-  margin-bottom: 1rem;
-  max-width: 42rem;
-}
-
-.stitch-panel__chrome {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-  padding: 0.45rem 0.75rem;
-  background: var(--ink);
-  color: rgba(255, 255, 255, 0.85);
-  border-radius: 12px 12px 0 0;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-}
-
-.stitch-panel__dots {
-  display: flex;
-  gap: 0.35rem;
-}
-
-.stitch-panel__dots i {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.35);
-}
-
-.stitch-panel__url {
-  flex: 1;
-  text-align: center;
-  font-family: ui-monospace, monospace;
-  font-weight: 500;
-  opacity: 0.9;
-}
-
-.stitch-panel__frame {
-  position: relative;
-  width: 100%;
-  border: 1px solid var(--line);
-  border-top: none;
-  border-radius: 0 0 16px 16px;
-  overflow: hidden;
-  background: var(--bg-card);
-  box-shadow: var(--shadow);
-}
-
-.stitch-panel__iframe {
-  display: block;
-  width: 100%;
-  min-height: min(70vh, 640px);
-  height: 640px;
-  border: 0;
-  background: #fff;
-}
-
-.stitch-panel__actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
-  margin-top: 1rem;
-  align-items: center;
-}
-
-@media (max-width: 768px) {
-  .stitch-panel__iframe {
-    height: 420px;
-    min-height: 50vh;
   }
 }
 
@@ -1108,9 +975,7 @@ iframe.skiptranslate {
   .site-header,
   .nav-toggle,
   .btn-row,
-  .site-footer,
-  .site-translate,
-  .stitch-panel {
+  .site-footer {
     display: none !important;
   }
   body {
