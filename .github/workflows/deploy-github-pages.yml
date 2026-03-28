@@ -35,8 +35,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      # Optional: set repo secrets PAGES_SITE_USER + PAGES_SITE_PASSWORD to enable a
-      # browser login on GitHub Pages (static-only; see GITHUB-PAGES.md).
+      # Required: PAGES_SITE_USER + PAGES_SITE_PASSWORD or deploy fails (see GITHUB-PAGES.md).
       - name: Apply Pages login (from secrets)
         env:
           PAGES_SITE_USER: ${{ secrets.PAGES_SITE_USER }}

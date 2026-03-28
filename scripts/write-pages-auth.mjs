@@ -12,10 +12,10 @@ const pass = process.env.PAGES_SITE_PASSWORD || "";
 
 if (!user || !pass) {
   console.log(
-    "::warning::PAGES_SITE_USER or PAGES_SITE_PASSWORD is not set — deployed site will have NO browser login. Add both repository Actions secrets (Settings → Secrets and variables → Actions), then redeploy."
+    "::error::Deploy blocked: set repository secrets PAGES_SITE_USER and PAGES_SITE_PASSWORD (Settings → Secrets and variables → Actions). Pages login is required for this workflow."
   );
-  console.log("write-pages-auth: leaving public/js/auth-config.js unchanged (empty digest).");
-  process.exit(0);
+  console.log("write-pages-auth: refusing to publish without auth digest.");
+  process.exit(1);
 }
 
 const digest = createHash("sha256").update(`${user}:${pass}`, "utf8").digest("hex");

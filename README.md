@@ -58,7 +58,7 @@ Open **http://localhost:8080** (paths like `/css/main.css` need this root = `pub
 
 ## Deploy to GitHub Pages (free)
 
-See **[GITHUB-PAGES.md](./GITHUB-PAGES.md)** — push to **`main`**, enable **Settings → Pages → GitHub Actions**. Optional **browser login**: add Action secrets **`PAGES_SITE_USER`** and **`PAGES_SITE_PASSWORD`**; the deploy workflow bakes a digest into the published `auth-config.js` (details and caveats in that doc). **Docker** still uses nginx Basic Auth locally; the two can use the same username and password.
+See **[GITHUB-PAGES.md](./GITHUB-PAGES.md)** — push to **`main`**, enable **Settings → Pages → GitHub Actions**. **Browser login is required for deploy:** set repository secrets **`PAGES_SITE_USER`** and **`PAGES_SITE_PASSWORD`** — without both, the workflow **fails** (digest baked into published `auth-config.js`). **Docker** still uses nginx Basic Auth locally; use the same username and password if you like.
 
 ## Deploy elsewhere (free)
 

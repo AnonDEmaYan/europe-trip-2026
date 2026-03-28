@@ -61,7 +61,7 @@ GitHub Pages serves **static files only** — no nginx Basic Auth. This repo dep
 
 **Limits:** The live site still ships `auth-config.js` with a **digest** only — offline guessing is possible. Fine for casual privacy; use **Cloudflare Access** or **private Pages** if you need stronger protection.
 
-If both secrets are **omitted**, the workflow prints a warning and the site stays **without** a gate (empty digest in the committed stub).
+If either secret is **missing**, the **Deploy to GitHub Pages** workflow **fails** at **Apply Pages login** — the site is not updated until both secrets are set (login is **enforced** for deploys from this repo).
 
 ## If the repo is only the `public/` folder
 
