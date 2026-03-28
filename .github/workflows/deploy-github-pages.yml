@@ -27,8 +27,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
+      # Optional: set repo secrets PAGES_SITE_USER + PAGES_SITE_PASSWORD to enable a
+      # browser login on GitHub Pages (static-only; see GITHUB-PAGES.md).
+      - name: Apply Pages login (from secrets)
+        env:
+          PAGES_SITE_USER: ${{ secrets.PAGES_SITE_USER }}
+          PAGES_SITE_PASSWORD: ${{ secrets.PAGES_SITE_PASSWORD }}
+        run: node scripts/write-pages-auth.mjs
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

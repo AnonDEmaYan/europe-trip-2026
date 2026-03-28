@@ -46,6 +46,9 @@ Open **http://localhost:8080** (paths like `/css/main.css` need this root = `pub
 | `scripts/build-explore-geojson.py` | Nominatim geocode for GeoJSON (set `NOMINATIM_INSECURE=0` if SSL certs OK) |
 | `public/css/main.css` | Styles |
 | `public/js/main.js` | Mobile nav |
+| `public/js/auth-config.js` | Pages login: empty locally; CI may set SHA-256 digest from secrets |
+| `public/js/site-gate.js` | Optional sign-in overlay when digest is set |
+| `scripts/write-pages-auth.mjs` | CI: writes `auth-config.js` from `PAGES_SITE_*` secrets |
 | `public/downloads/trip-route.kml` | Import into Google My Maps |
 | `docker-compose.yml` | nginx on port 8080 + Basic Auth from env |
 | `Dockerfile` | nginx + `htpasswd` for auth file at container start |
@@ -55,7 +58,7 @@ Open **http://localhost:8080** (paths like `/css/main.css` need this root = `pub
 
 ## Deploy to GitHub Pages (free)
 
-See **[GITHUB-PAGES.md](./GITHUB-PAGES.md)** — push this repo to GitHub, set **Pages → GitHub Actions**, site at `https://USER.github.io/REPO/`. GitHub Pages serves static files only, so **Docker Basic Auth does not apply** there; use something like **Cloudflare Access** or a **private repo + Pages** restrictions if you need a login on the public URL.
+See **[GITHUB-PAGES.md](./GITHUB-PAGES.md)** — push to **`main`**, enable **Settings → Pages → GitHub Actions**. Optional **browser login**: add Action secrets **`PAGES_SITE_USER`** and **`PAGES_SITE_PASSWORD`**; the deploy workflow bakes a digest into the published `auth-config.js` (details and caveats in that doc). **Docker** still uses nginx Basic Auth locally; the two can use the same username and password.
 
 ## Deploy elsewhere (free)
 

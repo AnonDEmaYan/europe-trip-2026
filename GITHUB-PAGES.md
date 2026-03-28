@@ -41,6 +41,19 @@ Replace `YOUR_USERNAME` / `YOUR_REPO` with yours.
 
 Updates: every push to `main` redeploys automatically.
 
+## Username / password on GitHub Pages
+
+GitHub Pages serves **static files only** — there is no nginx or HTTP Basic Auth like your **Docker** setup. This repo adds an **optional** browser login for the live site:
+
+1. On GitHub: repo → **Settings** → **Secrets and variables** → **Actions** → **New repository secret**.
+2. Add **`PAGES_SITE_USER`** and **`PAGES_SITE_PASSWORD`** (same values you use for Docker, e.g. `Intltravel2k26` / `Intltravel@2k26`).
+3. Push to **`main`** (or **Actions** → **Deploy to GitHub Pages** → **Run workflow**). The workflow runs `scripts/write-pages-auth.mjs`, which writes only a **SHA-256 digest** into `public/js/auth-config.js` in the deploy artifact — not your plaintext password in the repo.
+4. Open your Pages URL; you should get a **Trip site** sign-in. The session lasts until you close the tab (or clear site data).
+
+**Limits (read this):** Anyone can download the deployed `auth-config.js` and try offline guesses against the digest. This keeps casual visitors out; it is **not** bank-grade security. For stronger protection, use **Cloudflare Access**, a **private** GitHub repo with **GitHub Pro** private Pages, or keep the site **Docker-only** on your network.
+
+If you **omit** those two secrets, the published site has **no** login gate (digest stays empty in the committed stub).
+
 ## If the repo is only the `public/` folder
 
 If you prefer the repo root to **be** the site (no `public/` subfolder):
