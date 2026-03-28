@@ -16,7 +16,7 @@
 <body>
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="logo" href="index.html">Our trip <span>2026</span></a>
+      <a class="logo" href="index.html">Srikar &amp; Manasa trip <span>2026</span></a>
       <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav class="site-nav" id="site-nav" aria-label="Main">
         <ul>
@@ -29,13 +29,17 @@
           <li><a href="map.html" aria-current="page">Map</a></li>
         </ul>
       </nav>
+      <div class="site-translate" title="Translate this site — English or Telugu (తెలుగు)">
+        <span class="site-translate__label notranslate">తెలుగు</span>
+        <div id="google_translate_element"></div>
+      </div>
     </div>
   </header>
 
   <div class="page-hero page-hero--rich">
     <div class="wrap">
       <h1>Map &amp; Google</h1>
-      <p><strong>Interactive map</strong> with every pin from <a href="explore.html">Explore</a> (food, coffee, shops, wine trips, Seine cruise pier, airports, stations, stadiums). Tap a pin → <strong>Google Maps</strong>. Data: <code>data/explore-places.geojson</code> (rebuild with <code>python3 scripts/build-explore-geojson.py</code>).</p>
+      <p><strong>Interactive map</strong> with every pin from <a href="explore.html">Explore</a> (food, coffee, shops, wine trips, Seine cruise pier, airports, stations). Tap a pin → <strong>Google Maps</strong>. Data: <code>data/explore-places.geojson</code> (rebuild with <code>python3 scripts/build-explore-geojson.py</code>).</p>
     </div>
   </div>
 
@@ -59,7 +63,6 @@
             <button type="button" class="explore-map-chip" data-map-filter="madrid">Madrid</button>
             <button type="button" class="explore-map-chip" data-map-filter="paris">Paris</button>
             <button type="button" class="explore-map-chip" data-map-filter="transport">Airports &amp; rail</button>
-            <button type="button" class="explore-map-chip" data-map-filter="football">Stadiums</button>
           </div>
         </div>
         <p class="explore-map-count" id="explore-map-count">Loading pins…</p>
@@ -99,6 +102,7 @@
       <p>Private trip site · Map data © OpenStreetMap · <span id="js-year"></span></p>
     </div>
   </footer>
+  <script src="js/translator.js"></script>
   <script src="js/main.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>

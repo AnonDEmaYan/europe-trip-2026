@@ -12,7 +12,7 @@
 <body>
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="logo" href="index.html">Our trip <span>2026</span></a>
+      <a class="logo" href="index.html">Srikar &amp; Manasa trip <span>2026</span></a>
       <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav class="site-nav" id="site-nav" aria-label="Main">
         <ul>
@@ -25,6 +25,10 @@
           <li><a href="map.html">Map</a></li>
         </ul>
       </nav>
+      <div class="site-translate" title="Translate this site — English or Telugu (తెలుగు)">
+        <span class="site-translate__label notranslate">తెలుగు</span>
+        <div id="google_translate_element"></div>
+      </div>
     </div>
   </header>
 
@@ -37,8 +41,8 @@
 
   <main>
     <div class="wrap">
-      <h2 class="section-title">Flights</h2>
-      <p class="section-lead" style="margin-top:-0.5rem;">Published timetable snapshots (Feb&nbsp;2026) from <a href="https://info.flightmapper.net/flight/Delta_Air_Lines_DL_194" target="_blank" rel="noopener">FlightMapper · DL&nbsp;194</a> and <a href="https://info.flightmapper.net/flight/Delta_Air_Lines_DL_195" target="_blank" rel="noopener">FlightMapper · DL&nbsp;195</a> — <strong>always confirm on Delta’s app</strong>; days of week and clocks change with IATA season.</p>
+      <h2 class="section-title">Flights &amp; trains</h2>
+      <p class="section-lead" style="margin-top:-0.5rem;">Timetable rows below match <a href="https://info.flightmapper.net/flight/Delta_Air_Lines_DL_194" target="_blank" rel="noopener">FlightMapper · DL&nbsp;194</a> and <a href="https://info.flightmapper.net/flight/Delta_Air_Lines_DL_195" target="_blank" rel="noopener">FlightMapper · DL&nbsp;195</a> as of <strong>Feb&nbsp;2026</strong> (season blocks from <strong>8 Jan / 9 Jan 2026</strong>) — <strong>always confirm on Delta’s app / boarding pass</strong>.</p>
       <div class="table-wrap">
         <table>
           <thead>
@@ -52,15 +56,15 @@
           <tbody>
             <tr>
               <td><strong>Atlanta → Barcelona</strong><br /><small>DL 194</small></td>
-              <td><strong>5:50 PM</strong> ATL</td>
-              <td><strong>8:40 AM</strong> BCN <small>(next day)</small></td>
-              <td>Typical block <strong>~8h 50m</strong> nonstop. From Jan&nbsp;2026 some schedules show <strong>Tue / Thu / Sat</strong> only — if your ticket lands <strong>Mar&nbsp;31</strong>, match the <em>date + time</em> on the confirmation, not this table alone.</td>
+              <td><strong>5:50 PM Eastern</strong> <small>(17:50)</small></td>
+              <td><strong>8:40 AM</strong> BCN <small>(next morning · local)</small></td>
+              <td>Block <strong>~8h 50m</strong>. From <strong>8 Jan 2026</strong>: <strong>Tue / Thu / Sat</strong> only from ATL. <strong>Mar 31, 2026 is Tuesday</strong> — that usually means <strong>ATL departure evening Mar 31</strong> → <strong>BCN morning Apr 1</strong> on this flight; if your itinerary says <strong>BCN arrival Mar 31</strong>, your ticket may differ (codeshare / other day) — <strong>use confirmation</strong>.</td>
             </tr>
             <tr>
               <td><strong>Barcelona → Atlanta</strong><br /><small>See flight # note below</small></td>
-              <td><strong>10:55 AM</strong> BCN</td>
-              <td><strong>3:35 PM</strong> ATL</td>
-              <td>Typical block <strong>~10h 40m</strong>. <strong>Wed Apr&nbsp;8&nbsp;2026</strong> is a Wednesday; one published 2026 pattern runs <strong>Wed / Fri / Sun</strong> at this time. US-bound: be at BCN <strong>~3 hours</strong> before departure (~<strong>7:55 AM</strong> if 10:55 holds). <a href="guide.html#apr8">Apr 8 checklist →</a></td>
+              <td><strong>10:55 AM</strong> BCN <small>(local)</small></td>
+              <td><strong>3:35 PM Eastern</strong> ATL <small>(15:35)</small></td>
+              <td>Block <strong>~10h 40m</strong>. From <strong>9 Jan 2026</strong>: <strong>Wed / Fri / Sun</strong>. <strong>Wed Apr&nbsp;8&nbsp;2026</strong> matches. US-bound: be at BCN <strong>~3 hours</strong> before departure (~<strong>7:55 AM</strong> if 10:55 holds). <a href="guide.html#apr8">Apr 8 checklist →</a></td>
             </tr>
             <tr>
               <td><strong>Madrid → Paris</strong></td>
@@ -72,7 +76,7 @@
               <td><strong>Paris → Barcelona</strong></td>
               <td>—</td>
               <td>—</td>
-              <td>Second intra-Europe flight · back to hub before US departure.</td>
+              <td><strong>High-speed train</strong> · Paris (Gare de Lyon) → Barcelona Sants · ~<strong>6h 45m–7h</strong> · arrive with buffer before <strong>Apr 8</strong>.</td>
             </tr>
           </tbody>
         </table>
@@ -93,7 +97,7 @@
           <tbody>
             <tr>
               <td>Barcelona ↔ Madrid</td>
-              <td><strong>AVE</strong> high-speed train · <strong>Sants ↔ Atocha</strong> · ~2.5–3 h · <a href="https://www.renfe.com" target="_blank" rel="noopener">Renfe</a> or <a href="https://www.thetrainline.com" target="_blank" rel="noopener">Trainline</a></td>
+              <td><strong>AVE</strong> / high-speed train · <strong>Sants ↔ Atocha</strong> (or <strong>Chamartín</strong>) · ~2.5–3 h · booking links below → <a href="#trains-bcn-mad">Book trains</a></td>
             </tr>
             <tr>
               <td>Airports ↔ city</td>
@@ -107,73 +111,67 @@
         </table>
       </div>
 
-      <h2 class="section-title">Booking checklist</h2>
-      <ul class="checklist">
-        <li>AVE Barcelona → Madrid (Apr 2 morning)</li>
-        <li>Madrid → Paris flight (Apr 4)</li>
-        <li>Paris → Barcelona flight (Apr 7)</li>
-        <li>Hotels: Barcelona (2+1 nights), Madrid (2), Paris (3)</li>
-        <li>Sagrada Família timed entry</li>
-        <li>Optional: flamenco Madrid, Ribera wine tour, Champagne day from Paris, Disfrutar / Botín if desired</li>
-        <li>Football: club sites / official resale for any match you target (see <a href="#football">Football</a> below)</li>
-        <li>Paris <strong>Seine dinner cruise</strong> (Eiffel views) — book date + deck/window tier early (<a href="explore.html#seine-dinner">Explore</a>)</li>
-        <li>Travel insurance · phone plan · passport copies</li>
-        <li>Delta seats &amp; alerts for <strong>DL 194</strong> and your <strong>BCN → ATL</strong> flight (e.g. <strong>DL 195</strong> on many timetables · Apr 8)</li>
+      <h2 class="section-title" id="trains-bcn-mad">Book Barcelona ↔ Madrid trains</h2>
+      <p class="section-lead" style="margin-top:-0.35rem;">High-speed only ~<strong>2.5–3 h</strong> center to center. Search <strong>Barcelona Sants</strong> → <strong>Madrid Atocha</strong> or <strong>Chamartín–Clara Campoamor</strong>; compare prices across Renfe, iryo, and Ouigo.</p>
+      <div class="callout callout--info">
+        <strong>Booked / planned leg:</strong> <strong>iryo</strong> train <strong>06110</strong> · <strong>Barcelona → Madrid</strong> · <strong>Apr 2</strong> — confirm departure time, origin/destination stations, and coach/seat on your ticket or the <a href="https://www.iryo.eu" target="_blank" rel="noopener">iryo</a> app (times can change; always match <em>your</em> confirmation).
+      </div>
+      <ul class="booking-hub-list">
+        <li><a href="https://www.renfe.com" target="_blank" rel="noopener">Renfe</a> — official AVE and other Spanish rail; widest schedule for classic AVE.</li>
+        <li><a href="https://www.thetrainline.com" target="_blank" rel="noopener">Trainline</a> — book AVE and many European trains in English; mobile tickets.</li>
+        <li><a href="https://www.omio.com/" target="_blank" rel="noopener">Omio</a> — compare Renfe, iryo, Ouigo and times in one search; cross-check final price on the operator if needed.</li>
+        <li><a href="https://www.iryo.eu" target="_blank" rel="noopener">iryo</a> — private high-speed operator in Spain; often competitive fares.</li>
+        <li><a href="https://www.ouigo.com/es/en" target="_blank" rel="noopener">Ouigo Spain</a> — low-cost high-speed (check luggage rules and station).</li>
       </ul>
 
-      <h2 class="section-title" id="football">Football — high-profile matches &amp; your dates</h2>
-      <p class="section-lead">Fixtures below are from <strong>2025–26</strong> published schedules (e.g. <a href="https://www.espn.com/soccer/team/fixtures/_/id/83/barcelona" target="_blank" rel="noopener">ESPN · Barcelona</a>, <a href="https://www.espn.com/soccer/team/fixtures/_/id/86/real-madrid" target="_blank" rel="noopener">Real Madrid</a>). <strong>Kickoffs move</strong> for TV — always confirm on the <strong>club or La&nbsp;Liga / LFP</strong> site before booking travel or tickets.</p>
+      <h2 class="section-title" id="trains-paris-bcn">Book Paris ↔ Barcelona trains</h2>
+      <p class="section-lead" style="margin-top:-0.35rem;">Fast high-speed trains are usually ~<strong>6h 45m–7h</strong>. Search <strong>Paris Gare de Lyon</strong> → <strong>Barcelona Sants</strong> and compare TGV / high-speed options. Timed well, it’s your easiest “no airport” day between cities.</p>
+      <ul class="booking-hub-list">
+        <li><a href="https://www.thetrainline.com" target="_blank" rel="noopener">Trainline</a> — route comparison in English; mobile tickets.</li>
+        <li><a href="https://www.omio.com/" target="_blank" rel="noopener">Omio</a> — compare multiple rail options in one checkout.</li>
+        <li><a href="https://www.sncf-connect.com/en-en/" target="_blank" rel="noopener">SNCF Connect</a> — official French rail search (useful for TGV pricing / times).</li>
+        <li><a href="https://www.oui.sncf/en-en/" target="_blank" rel="noopener">Oui.sncf</a> — sometimes shows the same TGV options with different UI.</li>
+      </ul>
 
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Fixture</th>
-              <th>When / where</th>
-              <th>Trip fit</th>
-              <th>Time to plan</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>PSG</strong> — Ligue 1 <strong>home</strong> (Parc des Princes)</td>
-              <td>Check <a href="https://en.psg.fr/en/matches" target="_blank" rel="noopener">PSG schedule</a> &amp; <a href="https://billetterie.psg.fr/en/" target="_blank" rel="noopener">official tickets</a> for <strong>Apr 4–6</strong> while you’re in Paris.</td>
-              <td><strong>Top pick logistically.</strong> You have <strong>three Paris nights</strong> (incl. Easter Sun Apr&nbsp;5). A <strong>Sat / Sun / Mon</strong> evening kickoff fits without moving other cities.</td>
-              <td><strong>5–7 h</strong> comfortable: metro to stadium (~30–40 min from central Paris), <strong>60–90 min</strong> before kickoff for entry, <strong>~2 h</strong> match + stoppage, crowd exit. Add <strong>+1–2 h</strong> if you want a pre-match dinner or brasserie near <strong>16e / Auteuil</strong>.</td>
-            </tr>
-            <tr>
-              <td><strong>Atlético Madrid vs FC Barcelona</strong> (La Liga)</td>
-              <td><strong>Sat Apr 4, 2026</strong> — listed ~<strong>3:00 PM</strong> local · <strong>Cívitas Metropolitano</strong>, Madrid (<a href="https://www.espn.com/soccer/match/_/gameId/748434/barcelona-atletico-madrid" target="_blank" rel="noopener">ESPN match page</a>).</td>
-              <td><strong>Massive game</strong> — title-race tier. Your plan has <strong>MAD → Paris on Apr 4</strong>. <strong>Recommendation:</strong> book a <strong>late evening flight</strong> (after ~22:00) or fly <strong>Sun Apr 5 morning</strong> instead, so Apr 4 is free for the match + metro back to shower/pack. Not compatible with a <strong>mid-afternoon</strong> departure the same day.</td>
-              <td><strong>6–8 h</strong> block: Atocha area → metro/Light rail to stadium district (~<strong>45–60 min</strong>), gates early, 90+ minutes play, slow exit. Optional <strong>+1 h</strong> tapas near <strong>Centro</strong> before heading out.</td>
-            </tr>
-            <tr>
-              <td><strong>FC Barcelona vs Atlético Madrid</strong> (La Liga / European week)</td>
-              <td><strong>Wed Apr 8, 2026</strong> — Barcelona “home” (while Spotify Camp Nou work continues, matches are often at <strong>Estadi Olímpic Lluís Companys</strong> / Montjuïc — verify gate).</td>
-              <td><strong>Poor fit:</strong> your <strong>US-bound flight is morning Apr 8</strong> (~10:55 BCN). You’d need to <strong>move the return</strong> to catch an evening kickoff. Skip unless you intentionally extend.</td>
-              <td>If you ever did: same <strong>6–8 h</strong> stadium block as above, plus <strong>airport buffer</strong> the next day.</td>
-            </tr>
-            <tr>
-              <td><strong>Real Madrid vs Bayern München</strong> (UEFA Champions League)</td>
-              <td><strong>Tue Apr 7, 2026</strong> · <strong>Santiago Bernabéu</strong>, Madrid — listed ~<strong>3:00 PM</strong> (1st leg; confirm round).</td>
-              <td>You’re <strong>in Barcelona on Apr 7</strong> (Paris → BCN). <strong>Not workable</strong> without changing flights/hotels to stay in Madrid that night.</td>
-              <td>European night games: treat as <strong>7–9 h</strong> if you build a Madrid day around it (pregame + match + late metro).</td>
-            </tr>
-            <tr>
-              <td><strong>El Clásico</strong> — FC Barcelona vs Real Madrid</td>
-              <td><strong>Sun May 10, 2026</strong> · Barcelona (La Liga).</td>
-              <td><strong>After your trip</strong> — best for a future long weekend.</td>
-              <td>Full-day event for most fans: <strong>8 h+</strong> if you include city buzz and post-match.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <h2 class="section-title" id="booking-sites">Tours, tickets &amp; reservation sites</h2>
+      <p class="section-lead" style="margin-top:-0.35rem;">Use <strong>official</strong> pages for must-do timed entries (Sagrada, big museums, wine cellars). Aggregators help compare experiences, skip-the-line options, and cancellation rules — check the <strong>operator</strong> and recent reviews before you pay.</p>
+      <ul class="booking-hub-list">
+        <li><a href="https://www.viator.com/" target="_blank" rel="noopener">Viator</a> — day tours, food walks, transfers, bundles (global, Tripadvisor-owned).</li>
+        <li><a href="https://www.getyourguide.com/" target="_blank" rel="noopener">GetYourGuide</a> — similar catalog; filter by city + “skip the line” / small group.</li>
+        <li><a href="https://www.tiqets.com/" target="_blank" rel="noopener">Tiqets</a> — museum &amp; attraction tickets, often mobile entry.</li>
+        <li><a href="https://www.headout.com/" target="_blank" rel="noopener">Headout</a> — city experiences &amp; shows (compare prices with the two above).</li>
+        <li><a href="https://sagradafamilia.org/en/tickets" target="_blank" rel="noopener">Sagrada Família — official tickets</a> — book timed entry direct when possible.</li>
+        <li><a href="https://www.parismuseumpass.fr/en" target="_blank" rel="noopener">Paris Museum Pass</a> — optional if you’re hitting many museums; math the days vs à la carte.</li>
+        <li><a href="https://www.thefork.com/" target="_blank" rel="noopener">TheFork</a> — restaurant reservations in Spain &amp; France (discounts on some slots).</li>
+        <li><a href="https://www.opentable.com/" target="_blank" rel="noopener">OpenTable</a> — backup for sit-down bookings where venues list it.</li>
+        <li><a href="https://www.omio.com/" target="_blank" rel="noopener">Omio</a> — compare trains, buses &amp; some flights in one search (always cross-check with <a href="https://www.renfe.com" target="_blank" rel="noopener">Renfe</a> / <a href="https://www.sncf-connect.com/en-en/" target="_blank" rel="noopener">SNCF Connect</a> for best fares).</li>
+        <li><a href="https://www.thetrainline.com" target="_blank" rel="noopener">Trainline</a> — AVE &amp; European rail tickets (see also Renfe above).</li>
+        <li><a href="https://www.bateauxparisiens.com/en/" target="_blank" rel="noopener">Bateaux Parisiens</a> — official Seine dinner cruises (see <a href="explore.html#seine-dinner">Explore · Seine dinner</a>).</li>
+      </ul>
+      <p class="section-lead" style="font-size:0.95rem;color:var(--muted);margin-top:-0.25rem;"><strong>Flights:</strong> airline sites or Google Flights; <strong>hotels:</strong> your usual OTA or direct. <strong>Paris:</strong> scenic walks &amp; Champagne day trips — <a href="#paris-champagne">Paris &amp; Champagne</a> below.</p>
 
-      <div class="callout">
-        <strong>Our recommendation for this itinerary:</strong> (1) <strong>PSG at home</strong> if there’s a fixture on <strong>Apr 5 or 6</strong> evening — lowest friction. (2) If you care more about <strong>Spanish giants</strong> than Paris, rework <strong>Apr 4 travel</strong> and aim for <strong>Atlético–Barcelona in Madrid</strong> — unforgettable, but you must protect a <strong>late or next-day</strong> hop to Paris. (3) Treat <strong>no ticket</strong> as OK: a good <strong>sports bar / Irish pub</strong> with locals is <strong>2–3 h</strong> and still memorable.
-      </div>
+      <h2 class="section-title">Booking checklist</h2>
+      <p class="section-lead" style="margin-top:-0.5rem;font-size:0.95rem;"><a href="#booking-sites">Tours &amp; ticket hubs</a> (Viator, GetYourGuide, Tiqets, …) for optional experiences — still book must-sees on official sites when it saves hassle.</p>
+      <ul class="checklist checklist--links">
+        <li><a class="checklist-link" href="#trains-bcn-mad">iryo <strong>06110</strong> · Barcelona → Madrid (Apr 2)</a></li>
+        <li><a class="checklist-link" href="https://www.google.com/travel/flights?q=Flights%20from%20Madrid%20to%20Paris" target="_blank" rel="noopener">Madrid → Paris flight (Apr 4)</a></li>
+        <li><a class="checklist-link" href="#trains-paris-bcn">Paris → Barcelona train (Apr 7 evening)</a></li>
+        <li class="checklist__multi"><span class="checklist__multi-label">Hotels</span> <a href="https://www.booking.com/searchresults.en-gb.html?ss=Barcelona%2C+Catalonia%2C+Spain" target="_blank" rel="noopener">Barcelona</a><span class="checklist__sep">·</span><a href="https://www.booking.com/searchresults.en-gb.html?ss=Madrid%2C+Spain" target="_blank" rel="noopener">Madrid</a><span class="checklist__sep">·</span><a href="https://www.booking.com/searchresults.en-gb.html?ss=Paris%2C+France" target="_blank" rel="noopener">Paris</a> <small class="checklist__hint">(2+1, 2, 3 nights)</small></li>
+        <li><a class="checklist-link" href="https://sagradafamilia.org/en/tickets" target="_blank" rel="noopener">Sagrada Família timed entry</a></li>
+        <li><a class="checklist-link" href="#booking-sites">Optional: flamenco Madrid, Ribera wine tour, Champagne day from Paris, Disfrutar / Botín — book via hubs or direct</a></li>
+        <li><a class="checklist-link" href="explore.html#paris-scenic">Paris scenic walks &amp; views (Explore)</a></li>
+        <li><a class="checklist-link" href="explore.html#seine-dinner">Paris Seine dinner cruise (Eiffel views) — book date + deck early</a></li>
+        <li><a class="checklist-link" href="https://www.google.com/search?q=travel+insurance+europe+trip+schengen" target="_blank" rel="noopener">Travel insurance · phone plan · passport copies — start here</a></li>
+        <li><a class="checklist-link" href="https://www.delta.com" target="_blank" rel="noopener">Delta seats &amp; alerts — DL 194 out · BCN → ATL (e.g. DL 195 · Apr 8)</a></li>
+      </ul>
 
-      <p class="section-lead" style="margin-top:1.5rem;"><strong>Easier tickets, big vibe:</strong> <strong>Rayo Vallecano</strong> (Vallecas, Madrid) for underdog energy; <strong>RCD Espanyol</strong> when they host top sides (cross-city angle vs Barça). Always use <strong>official club + named resale partners</strong> — avoid random scalper DMs.</p>
+      <h2 class="section-title" id="paris-champagne">Paris scenic &amp; Champagne (day trips)</h2>
+      <p class="section-lead">No match day this trip — use Paris time for <strong>walks, views, and an easy rail day</strong> into the region.</p>
+      <ul class="checklist">
+        <li><strong>In Paris:</strong> Seine bridges · <strong>Île Saint-Louis</strong> · <strong>Tuileries</strong> / Louvre courtyard · <strong>Luxembourg</strong> · <strong>Promenade plantée</strong> (Coulée verte) · <strong>Buttes-Chaumont</strong> · <strong>Montmartre</strong> — full list with map links: <a href="explore.html#paris-scenic">Explore · Paris scenic</a>.</li>
+        <li><strong>Champagne (~1 h from Paris):</strong> TGV from <strong>Gare de l’Est</strong> to <strong>Reims</strong> (~45 min) or regional to <strong>Épernay</strong>; add <strong>Hautvillers</strong> (Dom Pérignon’s village) by local train or tour. Book cellar visits early. <a href="explore.html#champagne">Explore · Champagne &amp; nearby →</a></li>
+        <li><strong>Versailles:</strong> Palace + gardens (or gardens-only ticket on a light day) — pair with <a href="guide.html#paris">Guide · Paris</a> pacing.</li>
+      </ul>
 
       <h2 class="section-title">Nightlife (optional)</h2>
       <div class="callout callout--info">
@@ -195,6 +193,7 @@
       <p>Private trip site · <span id="js-year"></span></p>
     </div>
   </footer>
+  <script src="js/translator.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

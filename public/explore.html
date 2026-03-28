@@ -12,7 +12,7 @@
 <body>
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="logo" href="index.html">Our trip <span>2026</span></a>
+      <a class="logo" href="index.html">Srikar &amp; Manasa trip <span>2026</span></a>
       <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav class="site-nav" id="site-nav" aria-label="Main">
         <ul>
@@ -25,13 +25,17 @@
           <li><a href="map.html">Map</a></li>
         </ul>
       </nav>
+      <div class="site-translate" title="Translate this site — English or Telugu (తెలుగు)">
+        <span class="site-translate__label notranslate">తెలుగు</span>
+        <div id="google_translate_element"></div>
+      </div>
     </div>
   </header>
 
   <div class="page-hero">
     <div class="wrap">
       <h1>Explore</h1>
-      <p>Specialty coffee, <strong>authentic food</strong> (with <strong>healthy</strong> and <strong>spicier</strong> options), wineries, walks that rack up steps, <strong>value shopping</strong>, and Paris <strong>Seine dinner with Eiffel views</strong>. Tap any link for Google Maps — <strong>book tastings &amp; cruises</strong> early. Full strategy: <a href="guide.html#eat-move-shop">Guide · eat, walk, shop</a>.</p>
+      <p>Specialty coffee, <strong>authentic food</strong> (with <strong>healthy</strong> and <strong>spicier</strong> options), wineries, walks that rack up steps, <strong>value shopping</strong>, and Paris <strong>Seine dinner with Eiffel views</strong>. Tap any link for Google Maps — <strong>book tastings &amp; cruises</strong> early. <a href="logistics.html#booking-sites">Viator, GetYourGuide, Tiqets &amp; more</a> for tours and timed tickets. Full strategy: <a href="guide.html#eat-move-shop">Guide · eat, walk, shop</a>.</p>
     </div>
   </div>
 
@@ -44,6 +48,35 @@
           <a class="btn btn--ghost" href="map.html#all-places">Map · all pins</a>
         </div>
       </div>
+
+      <section class="city-block city-block--spain-notes" id="spain-notes" aria-labelledby="friends-bcn-heading">
+        <p class="city-block__kicker">From your Spain notes</p>
+        <h2 id="friends-bcn-heading">Friend’s BCN list</h2>
+        <p class="section-lead city-block--spain-notes__lead">
+          Maps anchors from a friend’s longer <strong>Barcelona-heavy</strong> trip — cross-check with our days below. <strong>Mercadona, metro card, layers, pickpockets:</strong> <a href="guide.html#spain-notes-practical">Guide · practical bullets</a>. Madrid &amp; Toledo from the same notes are grouped under the second list.
+        </p>
+        <div class="cat" id="friends-bcn-list">
+          <div class="cat__label">Barcelona + Montserrat day trip</div>
+          <ul class="spot-list spot-list--spain-notes">
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Arc+de+Triomf+Barcelona" target="_blank" rel="noopener">Arc de Triomf <small>Easy walk from Sagrada direction · promenade photos</small></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Palau+de+la+M%C3%BAsica+Catalana+Barcelona" target="_blank" rel="noopener">Palau de la Música Catalana <small>Modernista concert hall — book a tour if no show</small></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Parc+de+la+Ciutadella+Barcelona" target="_blank" rel="noopener">Parc de la Ciutadella <small>Boats, arc, green break near Born</small></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Terrassa+Mirador+Estadi+Ol%C3%ADmpic+Barcelona" target="_blank" rel="noopener">Terrassa Mirador (Montjuïc / Olympic ring) <small>Sunset “Salts / terrace” vibe from the notes</small></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=La+Taqueria+Barcelona+Sagrada" target="_blank" rel="noopener">La Taqueria <small>Mexican · noted near Sagrada</small></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Paradiso+Barcelona+speakeasy" target="_blank" rel="noopener">Paradiso <small>Cocktail bar · QR waitlist in notes</small></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Monestir+de+Montserrat+Spain" target="_blank" rel="noopener">Monestir de Montserrat <small>Day trip from Barcelona — rack railway / timing in logistics</small></a></li>
+          </ul>
+        </div>
+        <div class="cat">
+          <div class="cat__label">Same friend’s trip · Madrid &amp; Toledo</div>
+          <ul class="spot-list spot-list--spain-notes">
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Mirador+de+la+Catedral+de+la+Almudena+Madrid" target="_blank" rel="noopener">Mirador de la Catedral de la Almudena <small>Rooftop view near the palace</small></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Teatro+Kapital+Madrid" target="_blank" rel="noopener">Teatro Kapital <small>Multi-floor club — advance tickets; nights vary</small></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Toledo+Spain+historic+center" target="_blank" rel="noopener">Toledo (historic center) <small>Day-trip wedge from Madrid if you skip something else</small></a></li>
+          </ul>
+        </div>
+      </section>
+
       <section class="city-block" id="barcelona">
         <h2>Barcelona</h2>
         <div class="cat">
@@ -187,6 +220,22 @@
 
       <section class="city-block" id="paris">
         <h2>Paris</h2>
+        <div class="cat" id="paris-scenic">
+          <div class="cat__label">Scenic walks &amp; views</div>
+          <ul class="spot-list">
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Pont+Neuf+Paris" target="_blank" rel="noopener">Pont Neuf → east along the Seine</a> <small>Classic river framing</small></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Pont+Alexandre+III+Paris" target="_blank" rel="noopener">Pont Alexandre III</a> <small>Grand bridge · Invalides / Grand Palais views</small></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=%C3%8Ele+Saint-Louis+Paris" target="_blank" rel="noopener">Île Saint-Louis</a> <small>Quiet quays &amp; Berthillon ice cream</small></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Jardin+des+Tuileries+Paris" target="_blank" rel="noopener">Jardin des Tuileries</a> <small>Toward Louvre pyramid &amp; Orangerie</small></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Jardin+du+Luxembourg+Paris" target="_blank" rel="noopener">Jardin du Luxembourg</a> <small>Chairs, fountain, Latin Quarter adjacency</small></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Promenade+plant%C3%A9e+Paris+Coul%C3%A9e+verte" target="_blank" rel="noopener">Coulée verte (Promenade plantée)</a> <small>Elevated green walk in the 12e</small></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Parc+des+Buttes-Chaumont+Paris" target="_blank" rel="noopener">Parc des Buttes-Chaumont</a> <small>Hilltop temple · local picnic vibe</small></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Parc+de+Belleville+Paris" target="_blank" rel="noopener">Parc de Belleville</a> <small>Panorama over rooftops</small></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Montmartre+Sacr%C3%A9-C%C5%93ur+Paris" target="_blank" rel="noopener">Montmartre &amp; Sacré-Cœur</a> <small>Steps &amp; views — go early or off-peak</small></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Canal+Saint-Martin+Paris" target="_blank" rel="noopener">Canal Saint-Martin</a> <small>Bridges &amp; cafés</small></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Galerie+Vivienne+Paris" target="_blank" rel="noopener">Galerie Vivienne</a> <small>Covered passage — quick scenic detour</small></li>
+          </ul>
+        </div>
         <div class="cat">
           <div class="cat__label">Coffee</div>
           <ul class="spot-list">
@@ -231,24 +280,22 @@
           </ul>
         </div>
         <p class="section-lead" style="margin:0 0 1rem;font-size:0.92rem;color:var(--muted);"><strong>Tip:</strong> Pick a <strong>sunset</strong> sailing so the tower lights up during dessert; allow <strong>~2–2.5 h</strong> on board + arrive <strong>30 min</strong> early for boarding. Food is often <strong>tourist-tier</strong> — you’re paying for the view; pair with a great lunch elsewhere if you want peak gastronomy.</p>
-        <div class="cat">
-          <div class="cat__label">Champagne &amp; wine (day trips + Paris)</div>
+        <div class="cat" id="champagne">
+          <div class="cat__label">Champagne &amp; nearby (from Paris)</div>
+          <p class="section-lead" style="margin:0 0 0.75rem;font-size:0.9rem;color:var(--muted);"><strong>~1 h</strong> from Paris: TGV <strong>Gare de l’Est</strong> → <strong>Reims</strong> (~45 min). <strong>Épernay</strong> is the other hub (Avenue de Champagne); <strong>Hautvillers</strong> is a pretty hill village between them — combine with trains or a small-group tour. Book tastings in advance.</p>
           <ul class="spot-list">
-            <li><a href="https://www.google.com/maps/search/?api=1&query=Gare+de+l%27Est+Paris" target="_blank" rel="noopener">Paris Gare de l’Est <small>Trains to Reims ~45 min (TGV) — book tickets early</small></a></li>
-            <li><a href="https://www.google.com/maps/search/?api=1&query=Taittinger+Reims+Champagne" target="_blank" rel="noopener">Champagne Taittinger (Reims) <small>Cellar tours — book official site</small></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Gare+de+l%27Est+Paris" target="_blank" rel="noopener">Paris Gare de l’Est <small>SNCF / SNCF Connect — TGV &amp; regional east</small></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Cath%C3%A9drale+Notre-Dame+de+Reims" target="_blank" rel="noopener">Cathédrale Notre-Dame de Reims <small>Gothic façade — UNESCO, near station</small></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Gare+de+Reims" target="_blank" rel="noopener">Gare de Reims <small>Walkable to cathedral &amp; maisons</small></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Taittinger+Reims+Champagne" target="_blank" rel="noopener">Champagne Taittinger (Reims) <small>Cellar tours — official booking</small></a></li>
             <li><a href="https://www.google.com/maps/search/?api=1&query=Veuve+Clicquot+Reims" target="_blank" rel="noopener">Veuve Clicquot (Reims) <small>Prestige visits — reserve</small></a></li>
-            <li><a href="https://www.google.com/maps/search/?api=1&query=Avenue+de+Champagne+%C3%89pernay" target="_blank" rel="noopener">Avenue de Champagne, Épernay <small>Moët &amp; houses — ~30 min from Reims by train</small></a></li>
-            <li><a href="https://www.google.com/maps/search/?api=1&query=Maison+Ruinart+Reims" target="_blank" rel="noopener">Ruinart (Reims) <small>Historic chalk cellars — book well ahead</small></a></li>
-            <li><a href="https://www.google.com/maps/search/?api=1&query=Les+Caves+du+Louvre+Paris" target="_blank" rel="noopener">Les Caves du Louvre <small>Wine experience in Paris (no train)</small></a></li>
-            <li><a href="https://www.google.com/maps/search/?api=1&query=Caves+Taillevent+Paris" target="_blank" rel="noopener">Les Caves de Taillevent <small>Legendary retail + by-the-glass</small></a></li>
-          </ul>
-        </div>
-        <div class="cat">
-          <div class="cat__label">Wander</div>
-          <ul class="spot-list">
-            <li><a href="https://www.google.com/maps/search/?api=1&query=Canal+Saint-Martin+Paris" target="_blank" rel="noopener">Canal Saint-Martin</a></li>
-            <li><a href="https://www.google.com/maps/search/?api=1&query=Galerie+Vivienne+Paris" target="_blank" rel="noopener">Galerie Vivienne <small>Covered passage</small></a></li>
-            <li><a href="https://www.google.com/maps/search/?api=1&query=Buttes-Chaumont+Paris" target="_blank" rel="noopener">Parc des Buttes-Chaumont</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Maison+Ruinart+Reims" target="_blank" rel="noopener">Ruinart (Reims) <small>Chalk cellars — book well ahead</small></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Gare+d%27%C3%89pernay" target="_blank" rel="noopener">Gare d’Épernay <small>Regional from Reims or direct routes — check same-day</small></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Avenue+de+Champagne+%C3%89pernay" target="_blank" rel="noopener">Avenue de Champagne, Épernay <small>Moët &amp; Chandon, Perrier-Jouët, etc.</small></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Hautvillers+France+Champagne" target="_blank" rel="noopener">Hautvillers</a> <small>Dom Pérignon’s village — vineyards &amp; abbey; often paired with Épernay/Reims by tour or local bus</small></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=%C3%89pernay+to+Hautvillers" target="_blank" rel="noopener">Épernay ↔ Hautvillers <small>Short hop — verify bus / taxi / tour same day</small></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Les+Caves+du+Louvre+Paris" target="_blank" rel="noopener">Les Caves du Louvre <small>Sparkling intro in Paris if you skip the region</small></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Caves+Taillevent+Paris" target="_blank" rel="noopener">Les Caves de Taillevent <small>Retail + by-the-glass in Paris</small></a></li>
           </ul>
         </div>
         <div class="cat">
@@ -271,20 +318,9 @@
         </div>
       </section>
 
-      <section class="city-block" id="football">
-        <h2>Football (soccer)</h2>
-        <p class="section-lead" style="margin-top:0;">High-profile fixtures around your cities, how they line up with <strong>Mar 31 – Apr 8</strong>, and <strong>how many hours</strong> to budget (stadium + travel + pre-match).</p>
-        <ul class="spot-list">
-          <li><a href="logistics.html#football">Logistics · Football — matches, trip fit &amp; timing →</a></li>
-          <li><a href="https://en.psg.fr/en/matches" target="_blank" rel="noopener">PSG — fixtures &amp; tickets <small>Paris</small></a></li>
-          <li><a href="https://www.realmadrid.com/en-US/football/games" target="_blank" rel="noopener">Real Madrid — games <small>Madrid</small></a></li>
-          <li><a href="https://www.fcbarcelona.com/en/football/first-team/schedule" target="_blank" rel="noopener">FC Barcelona — schedule <small>Barcelona</small></a></li>
-          <li><a href="https://www.atleticodemadrid.com/en/atm/first-team/schedule" target="_blank" rel="noopener">Atlético de Madrid — schedule <small>Madrid</small></a></li>
-        </ul>
-      </section>
 
       <div class="callout callout--info">
-        <strong>Booking:</strong> Big Champagne houses and Codorníu/Freixenet sell out slots — reserve on official sites. Easter Sunday may affect openings; double-check hours. For Penedès, consider a <strong>half-day tour from Barcelona</strong> (GetYourGuide / Viator) if you don’t want to self-drive.
+        <strong>Booking:</strong> Big Champagne houses and Codorníu/Freixenet sell out slots — reserve on official sites. Easter Sunday may affect openings; double-check hours. For Penedès, consider a <strong>half-day tour from Barcelona</strong> via <a href="logistics.html#booking-sites">Viator / GetYourGuide / similar</a> if you don’t want to self-drive.
       </div>
     </div>
   </main>
@@ -294,6 +330,7 @@
       <p>Private trip site · <span id="js-year"></span></p>
     </div>
   </footer>
+  <script src="js/translator.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

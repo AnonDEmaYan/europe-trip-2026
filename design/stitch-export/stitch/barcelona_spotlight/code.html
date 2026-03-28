@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Barcelona Discovery | Voyager</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-fixed": "#ffdbd0",
+                        "surface-variant": "#e5e2e1",
+                        "secondary-fixed-dim": "#a7c8ff",
+                        "on-surface": "#1b1c1c",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#3f484c",
+                        "secondary-container": "#6ba7fd",
+                        "surface-tint": "#a23f1a",
+                        "primary-container": "#bf542e",
+                        "primary-fixed-dim": "#ffb59d",
+                        "inverse-primary": "#ffb59d",
+                        "surface-dim": "#dcd9d9",
+                        "secondary-fixed": "#d5e3ff",
+                        "inverse-surface": "#303030",
+                        "on-tertiary-fixed": "#141d20",
+                        "tertiary-fixed-dim": "#bec8cc",
+                        "on-secondary-fixed": "#001b3b",
+                        "outline": "#8a726a",
+                        "tertiary-container": "#6c767a",
+                        "on-tertiary": "#ffffff",
+                        "background": "#fcf9f8",
+                        "surface-container": "#f0eded",
+                        "on-primary-fixed": "#390c00",
+                        "outline-variant": "#dec0b7",
+                        "tertiary": "#545e61",
+                        "secondary": "#095eb0",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-container-low": "#f6f3f2",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e5e2e1",
+                        "tertiary-fixed": "#dae4e8",
+                        "inverse-on-surface": "#f3f0ef",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#822803",
+                        "on-secondary-container": "#003b74",
+                        "on-primary-container": "#fffbff",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#004788",
+                        "surface-container-high": "#eae7e7",
+                        "surface-bright": "#fcf9f8",
+                        "primary": "#9f3c18",
+                        "on-surface-variant": "#57423c",
+                        "surface": "#fcf9f8",
+                        "on-tertiary-container": "#f9fdff",
+                        "on-background": "#1b1c1c"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .serif-italic { font-family: 'Noto Serif'; font-style: italic; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed">
+<!-- TopNavBar Component -->
+<nav class="sticky top-0 z-50 w-full bg-[#fcf9f8] dark:bg-stone-950 bg-stone-100/50 dark:bg-stone-900/50 backdrop-blur-md shadow-sm dark:shadow-none shadow-orange-900/5">
+<div class="flex justify-between items-center px-10 py-5 w-full max-w-screen-2xl mx-auto">
+<div class="text-3xl font-serif italic text-orange-900 dark:text-orange-200">Voyager</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-orange-700 dark:hover:text-orange-300 transition-colors duration-300" href="#">Home</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-orange-700 dark:hover:text-orange-300 transition-colors duration-300" href="#">Itinerary</a>
+<a class="text-orange-800 dark:text-orange-400 font-bold border-b-2 border-orange-800 dark:border-orange-400 pb-1 hover:text-orange-700 dark:hover:text-orange-300 transition-colors duration-300" href="#">Explore</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-orange-700 dark:hover:text-orange-300 transition-colors duration-300" href="#">Visuals</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-orange-700 dark:hover:text-orange-300 transition-colors duration-300" href="#">Logistics</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-orange-700 dark:hover:text-orange-300 transition-colors duration-300" href="#">Map</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-stone-600 dark:text-stone-400 hover:text-orange-700 transition-colors">notifications</button>
+<button class="material-symbols-outlined text-stone-600 dark:text-stone-400 hover:text-orange-700 transition-colors">account_circle</button>
+</div>
+</div>
+</nav>
+<div class="flex min-h-screen">
+<!-- SideNavBar Component -->
+<aside class="fixed left-0 top-0 hidden lg:flex flex-col pt-24 pb-10 h-screen w-72 bg-[#fcf9f8] dark:bg-stone-950 tonal-shift bg-stone-100/30 dark:bg-stone-900/30 z-40">
+<div class="px-8 mb-10">
+<h2 class="font-headline text-xl tracking-tight text-orange-900 dark:text-orange-200">Europe 2024</h2>
+<p class="text-stone-500 dark:text-stone-400 text-sm font-label">The Grand Tour</p>
+</div>
+<div class="flex flex-col gap-2">
+<a class="flex items-center gap-4 text-orange-900 dark:text-orange-200 font-bold bg-orange-50 dark:bg-orange-900/20 rounded-r-full mr-4 px-8 py-3 translate-x-1 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-label uppercase tracking-widest text-[10px]">Destinations</span>
+</a>
+<a class="flex items-center gap-4 text-stone-500 dark:text-stone-400 px-8 py-3 hover:bg-stone-200/50 dark:hover:bg-stone-800/50 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="restaurant">restaurant</span>
+<span class="font-label uppercase tracking-widest text-[10px]">Culinary</span>
+</a>
+<a class="flex items-center gap-4 text-stone-500 dark:text-stone-400 px-8 py-3 hover:bg-stone-200/50 dark:hover:bg-stone-800/50 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="museum">museum</span>
+<span class="font-label uppercase tracking-widest text-[10px]">Culture</span>
+</a>
+<a class="flex items-center gap-4 text-stone-500 dark:text-stone-400 px-8 py-3 hover:bg-stone-200/50 dark:hover:bg-stone-800/50 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="event_available">event_available</span>
+<span class="font-label uppercase tracking-widest text-[10px]">Logistics</span>
+</a>
+</div>
+<div class="mt-auto px-8">
+<button class="w-full bg-primary text-white font-label py-3 rounded-xl shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
+                    Download Guide
+                </button>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 lg:ml-72 bg-surface">
+<!-- Hero / Map Section -->
+<section class="relative w-full h-[614px] overflow-hidden">
+<!-- Map Background -->
+<div class="absolute inset-0 bg-surface-container">
+<img alt="Map of Barcelona showing Eixample district" class="w-full h-full object-cover mix-blend-multiply opacity-40" data-alt="Detailed map of Barcelona Eixample district architecture" data-location="Barcelona" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx-ZzIRO3sfSDLe84btA-XNibEB6sXjCRkaR8Dcixt3JDtSHBIlmkjiqzLjha0t0HIknkK-fBu3rDR9q2eiVrXMJu1khIhcMvf_ufsQOYzAK1JiXZImd6Ux3c0uFQxr5NIfHLVHjRwdJW1B1QqSlhu8eiP5_lx1C8aJE10ewTZVT4aRvg5UgfmxeIMfpxjZCT1FCAn8rjiHHYm1ibi1yyYFZzW9JFzK1K926fSpLGp-05trBQqsWNhlATVZdykkiqia6WUYW-o2iOf"/>
+<!-- Cluster Markers UI -->
+<div class="absolute top-1/4 left-1/3 group cursor-pointer">
+<div class="bg-primary text-white p-2 rounded-full shadow-xl flex items-center justify-center scale-110">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">architecture</span>
+</div>
+<div class="absolute top-full mt-2 left-1/2 -translate-x-1/2 bg-surface-container-lowest px-3 py-1 rounded-full shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-label text-xs font-bold">Gaudi Works (8)</span>
+</div>
+</div>
+<div class="absolute bottom-1/3 right-1/4 group cursor-pointer">
+<div class="bg-secondary text-white p-2 rounded-full shadow-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">local_bar</span>
+</div>
+<div class="absolute top-full mt-2 left-1/2 -translate-x-1/2 bg-surface-container-lowest px-3 py-1 rounded-full shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-label text-xs font-bold">Tapas Bars (12)</span>
+</div>
+</div>
+<div class="absolute bottom-10 right-10 group cursor-pointer">
+<div class="bg-on-surface text-white p-2 rounded-full shadow-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">flight</span>
+</div>
+<div class="absolute bottom-full mb-2 right-0 bg-surface-container-lowest px-3 py-1 rounded-full shadow-md whitespace-nowrap">
+<span class="font-label text-xs font-bold">BCN Airport</span>
+</div>
+</div>
+</div>
+<!-- Editorial Header Overlay -->
+<div class="absolute inset-0 flex items-end px-12 pb-16 pointer-events-none">
+<div class="max-w-2xl">
+<p class="font-label text-primary font-bold tracking-[0.3em] uppercase mb-4">Destination Discovery</p>
+<h1 class="font-headline text-6xl lg:text-8xl text-on-surface mb-6">Barcelona.</h1>
+<p class="font-body text-xl text-on-surface-variant leading-relaxed max-w-lg mb-8">
+                            Catalonia's vibrant capital, where Gothic architecture meets Mediterranean sunshine and avant-garde Modernisme.
+                        </p>
+<div class="flex gap-4 pointer-events-auto">
+<button class="bg-gradient-to-r from-primary to-primary-container text-white px-8 py-4 rounded-xl font-label flex items-center gap-2 shadow-xl shadow-primary/30 hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-sm">map</span>
+                                View on Map
+                            </button>
+<button class="bg-surface-container-low backdrop-blur-md text-on-surface border border-outline-variant/20 px-8 py-4 rounded-xl font-label hover:bg-white transition-colors">
+                                Add to Trip
+                            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Content Section: Barcelona Must-Sees -->
+<section class="px-12 py-24 bg-surface">
+<div class="flex flex-col lg:flex-row justify-between items-baseline mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="font-headline text-4xl mb-6">Barcelona Must-Sees</h2>
+<div class="w-24 h-1 bg-primary mb-6"></div>
+<p class="font-body text-on-surface-variant">The soul of the city told through its most iconic landmarks and hidden gems.</p>
+</div>
+<div class="flex gap-2">
+<span class="bg-surface-container-high px-4 py-2 rounded-full text-xs font-label uppercase tracking-widest text-on-surface-variant">History</span>
+<span class="bg-surface-container-high px-4 py-2 rounded-full text-xs font-label uppercase tracking-widest text-on-surface-variant">Art</span>
+<span class="bg-surface-container-high px-4 py-2 rounded-full text-xs font-label uppercase tracking-widest text-on-surface-variant">Gastronomy</span>
+</div>
+</div>
+<!-- Bento Grid for Editorial Cards -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Large Card: Sagrada Familia -->
+<div class="md:col-span-8 group relative aspect-[16/10] overflow-hidden rounded-xl bg-surface-container-low transition-all hover:shadow-2xl">
+<img alt="La Sagrada Familia details" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Intricate stone carvings of the Sagrada Familia towers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd7bPB7PifKI2OGsYpwk-Q-u5YeW7a-fNXGHrHq3OK-3KzNV41O28NK8engwndz7j5KMaO7RR6UvuMUFYIQu52twqg2wxqJUMcRzS2vnHOu0TLFsIfE5wrE8vBcEFQGa2kjWRjZZ_9SW92_mVDyAnAPTr3QFuK9DveAogD-earvVC_v2yWvh7lMb3SxPc9PaQzX4xi7H_LOv83h191zT6h9twIkXvozwZqYau6yGLhmFGKGcPfOcLQ68n1zUtLukKkgbZDbNeKKJXF"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-0 left-0 p-10 text-white">
+<span class="font-label text-xs uppercase tracking-widest bg-primary px-3 py-1 rounded-full mb-4 inline-block">Iconic Landmark</span>
+<h3 class="font-headline text-4xl mb-4">La Sagrada Família</h3>
+<p class="font-body text-white/80 max-w-md line-clamp-2">Gaudí's unfinished masterpiece, a forest of stone and light that redefines spiritual architecture.</p>
+</div>
+</div>
+<!-- Small Card: Park Güell -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low transition-all">
+<img alt="Park Güell Mosaic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Colorful mosaic tile bench in Park Guell overlooking Barcelona" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj95BdWhWj8wgmO6dJ-a-_Bni8rh4_3qJHtCxHcZwkUGUt0aH8f3gDDfnwqay97wkcYjWeEQfTHv7MbgPO57dD5wKsvi7_NRgoCFMmIanlkFXAMnjUN2iqtrNnGO6epvc0OYEp9_IsVB3n0o03-cAqXBgyY7jt5nBlVByj-IyFQwdfrlLErVG1p1j49z5aP7l_OkkgSkH9x3LDByOqSNlD3m-8l_hEFLRZGyrMCm77CWPKqTaTx7v8SoQS9LwcjhWUalT9sIapjquJ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/70 via-transparent to-transparent opacity-50"></div>
+<div class="absolute bottom-0 left-0 p-8 text-white">
+<h3 class="font-headline text-2xl mb-2">Park Güell</h3>
+<p class="font-body text-xs text-white/80 uppercase tracking-widest">Gaudí's Garden City</p>
+</div>
+</div>
+<!-- Medium Card: Gothic Quarter -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low">
+<img alt="Gothic Quarter street" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Narrow medieval alleyway in the Gothic Quarter of Barcelona" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8BBhXNBNHCA9lV1MFZTcvL79gXBbIFYgAsYeQ3B7j_xV7QiCQnmGYoNa8diZcm23u12As9B-nkBrnA-EEGJ53nUIvQ2r5KIzFWbV5ZYbNV1gLYad05gT8ch8tpCD63Q75IlZyWiTLOiyyBzo2foIxc651G8DdVwIug5EfFHGmNFw-tztpK5j0QGds2FFMy4QS0CgIqTP0X0JmCsjD-TZ2jZsRi7XluDoxgAwnkSDolN0pL_lpXNAuunDfsGH53Dq6y-sTzfGHhvK_"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/70 via-transparent to-transparent opacity-50"></div>
+<div class="absolute bottom-0 left-0 p-8 text-white">
+<h3 class="font-headline text-2xl mb-2">Barri Gòtic</h3>
+<p class="font-body text-xs text-white/80 uppercase tracking-widest">Medieval History</p>
+</div>
+</div>
+<!-- Large Card: Barceloneta -->
+<div class="md:col-span-8 group relative aspect-[16/6] overflow-hidden rounded-xl bg-surface-container-low">
+<img alt="Barceloneta Beach" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Beachfront palm trees and Mediterranean sea in Barceloneta" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr5kPULyFTW6VV9449GAQMxi7wEm9q1lAng4lpKbHBaevxKjO1RpHo43kvUnaIJfB9CTNH7i6K1gVSW_8UjnhIRW4V80raEr-KbQBgEHcKwybzGN9k9z34KvoCycioV7dQ-QSEuiIPQHFgEY3aO7ZHOeHGKgllkD7bKJ4yleHqgxP13Ownxj_sLM6--2eeT-mdbn_43CY4ffl9bIAeWFEdU_eh62sldhynKiJSitiIJzhR3xx5Cz-G7FYmzLV12eZTVjOWzBsEp-EN"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/70 via-transparent to-transparent opacity-50"></div>
+<div class="absolute bottom-0 left-0 p-10 text-white">
+<div class="flex items-center gap-6">
+<div>
+<h3 class="font-headline text-3xl mb-2">La Barceloneta</h3>
+<p class="font-body text-white/80">Golden sands and the freshest seafood by the sea.</p>
+</div>
+<div class="ml-auto">
+<button class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center hover:bg-white/40 transition-colors">
+<span class="material-symbols-outlined text-white">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Culinary Highlights Section -->
+<section class="bg-surface-container-low px-12 py-24 mb-20 rounded-t-[4rem]">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2">
+<div class="relative">
+<img alt="Spanish Tapas Spread" class="rounded-xl shadow-2xl relative z-10" data-alt="Assortment of traditional Spanish tapas including croquettes and pan con tomate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACQuQ2D7llPWZ4k2_Q_fqI3DyNhEh2YSQF8JN6sLnD7qw5LeaEJ4cp5jAKJocBf8roQ-I5socopTfuLRK3ej9tk6H1OAGy9yy7fzpkJ8hbLNzrZbT1zFPg_QAgrbqFvJCYd_nHiYsDC14E7N-nVXh-Qs1ciSoYcpvhQQkRBlUiHvSOuVeiByMUo48_pYg4BH1SHQPXWEPeHd3pbVZ3NL1N6e0dB9FScl3HpHTdN6fLMs0DrBPB_9K1KidXp3YEn9xWmmEfJl3GhQiz"/>
+<div class="absolute -top-6 -left-6 w-full h-full border-2 border-primary rounded-xl z-0"></div>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<span class="font-label text-primary font-bold text-sm tracking-widest">LOCAL FLAVORS</span>
+<h2 class="font-headline text-5xl mt-4 mb-8">The Tapas Tradition</h2>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="font-serif italic text-4xl text-outline-variant">01</span>
+<div>
+<h4 class="font-headline text-xl mb-1">Mercat de Sant Josep de la Boqueria</h4>
+<p class="font-body text-on-surface-variant text-sm">A sensory explosion of fresh produce, cured meats, and bustling food stalls.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="font-serif italic text-4xl text-outline-variant">02</span>
+<div>
+<h4 class="font-headline text-xl mb-1">El Born Vermuterias</h4>
+<p class="font-body text-on-surface-variant text-sm">Sip local vermouth accompanied by legendary 'patatas bravas' in historic cellars.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="font-serif italic text-4xl text-outline-variant">03</span>
+<div>
+<h4 class="font-headline text-xl mb-1">Eixample Fine Dining</h4>
+<p class="font-body text-on-surface-variant text-sm">Experience the cutting edge of Michelin-starred Catalan molecular gastronomy.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+<!-- Mobile Navigation (Suppressed per "Destination" Rule logic but active on small screens) -->
+<div class="md:hidden fixed bottom-0 left-0 w-full bg-surface-container-lowest border-t border-outline-variant/10 px-6 py-4 flex justify-around items-center z-50">
+<button class="flex flex-col items-center gap-1 text-stone-600">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-label">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="text-[10px] font-label">Explore</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-stone-600">
+<span class="material-symbols-outlined">map</span>
+<span class="text-[10px] font-label">Map</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-stone-600">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-[10px] font-label">Profile</span>
+</button>
+</div>
+</body></html>
